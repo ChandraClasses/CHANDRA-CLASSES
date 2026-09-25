@@ -99,7 +99,7 @@
                     </div>
                 </div>
 
-                <!-- Formspree Inquiry Card -->
+                <!-- WhatsApp Direct Form -->
                 <div class="lg:col-span-5 bg-white text-slate-900 p-7 sm:p-8 rounded-3xl shadow-2xl border border-slate-200">
                     <div class="flex items-center space-x-3 mb-5">
                         <div class="bg-amber-500/10 text-amber-600 p-3 rounded-2xl border border-amber-500/20">
@@ -107,22 +107,22 @@
                         </div>
                         <div>
                             <h3 class="text-xl font-bold text-slate-900">Book Demo / Inquiry</h3>
-                            <p class="text-xs text-slate-500">Direct query to Mr. Chandra</p>
+                            <p class="text-xs text-slate-500">Direct message to Mr. Chandra</p>
                         </div>
                     </div>
                     
-                    <form action="https://formspree.io/f/xrpblowd" method="POST" class="space-y-4">
+                    <form onsubmit="sendWhatsAppQuery(event)" class="space-y-4">
                         <div>
                             <label class="block text-xs font-bold text-slate-700 mb-1 uppercase tracking-wider">Student Name *</label>
-                            <input type="text" name="Student Name" required placeholder="Enter full name" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus:outline-none text-sm transition">
+                            <input type="text" id="studentName" required placeholder="Enter full name" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus:outline-none text-sm transition">
                         </div>
                         <div>
                             <label class="block text-xs font-bold text-slate-700 mb-1 uppercase tracking-wider">Mobile Number *</label>
-                            <input type="tel" name="Mobile Number" required placeholder="10-digit mobile number" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus:outline-none text-sm transition">
+                            <input type="tel" id="studentPhone" required placeholder="10-digit mobile number" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus:outline-none text-sm transition">
                         </div>
                         <div>
                             <label class="block text-xs font-bold text-slate-700 mb-1 uppercase tracking-wider">Target Class *</label>
-                            <select name="Class / Target Exam" required class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus:outline-none text-sm transition">
+                            <select id="studentClass" required class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus:outline-none text-sm transition">
                                 <option value="">Select Class</option>
                                 <option value="Class 9th">Class 9th Mathematics</option>
                                 <option value="Class 10th">Class 10th Board Math</option>
@@ -133,10 +133,10 @@
                         </div>
                         <div>
                             <label class="block text-xs font-bold text-slate-700 mb-1 uppercase tracking-wider">Message / Doubt (Optional)</label>
-                            <textarea name="Message" rows="3" maxlength="500" placeholder="Type message here (Max 100 words)..." class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus:outline-none text-sm resize-none transition"></textarea>
+                            <textarea id="studentMsg" rows="3" maxlength="500" placeholder="Type message here..." class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus:outline-none text-sm resize-none transition"></textarea>
                         </div>
-                        <button type="submit" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-black py-3.5 rounded-xl transition gold-shadow uppercase tracking-wider text-xs">
-                            Submit Inquiry <i class="fa-solid fa-arrow-right ml-1.5"></i>
+                        <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-black py-3.5 rounded-xl transition shadow-lg shadow-emerald-600/30 uppercase tracking-wider text-xs flex items-center justify-center">
+                            Send Inquiry on WhatsApp <i class="fa-brands fa-whatsapp text-base ml-2"></i>
                         </button>
                     </form>
                 </div>
@@ -194,7 +194,6 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
                 <div class="bg-white p-8 rounded-3xl border border-slate-200 card-shadow hover:border-amber-400 transition">
                     <div class="w-12 h-12 bg-amber-500/10 text-amber-600 rounded-2xl flex items-center justify-center text-xl mb-5 font-black border border-amber-500/20">
                         <i class="fa-solid fa-book-open"></i>
@@ -208,7 +207,6 @@
                     </ul>
                 </div>
 
-                <!-- Card 2 -->
                 <div class="bg-white p-8 rounded-3xl border border-slate-200 card-shadow hover:border-amber-400 transition">
                     <div class="w-12 h-12 bg-indigo-500/10 text-indigo-600 rounded-2xl flex items-center justify-center text-xl mb-5 font-black border border-indigo-500/20">
                         <i class="fa-solid fa-chalkboard-user"></i>
@@ -222,7 +220,6 @@
                     </ul>
                 </div>
 
-                <!-- Card 3 -->
                 <div class="bg-white p-8 rounded-3xl border border-slate-200 card-shadow hover:border-amber-400 transition">
                     <div class="w-12 h-12 bg-emerald-500/10 text-emerald-600 rounded-2xl flex items-center justify-center text-xl mb-5 font-black border border-emerald-500/20">
                         <i class="fa-solid fa-users"></i>
@@ -249,13 +246,10 @@
             </div>
 
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                
                 <!-- 9th -->
                 <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200 hover:border-emerald-500 transition flex flex-col justify-between card-shadow">
                     <div>
-                        <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center font-black text-lg mb-4">
-                            9th
-                        </div>
+                        <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center font-black text-lg mb-4">9th</div>
                         <h3 class="font-bold text-slate-900 text-lg mb-1">Class 9th Math</h3>
                         <p class="text-xs text-slate-500 mb-6">NCERT Notes, Formula Sheets & Practice PDFs.</p>
                     </div>
@@ -267,9 +261,7 @@
                 <!-- 10th -->
                 <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200 hover:border-blue-500 transition flex flex-col justify-between card-shadow">
                     <div>
-                        <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-2xl flex items-center justify-center font-black text-lg mb-4">
-                            10th
-                        </div>
+                        <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-2xl flex items-center justify-center font-black text-lg mb-4">10th</div>
                         <h3 class="font-bold text-slate-900 text-lg mb-1">Class 10th Board</h3>
                         <p class="text-xs text-slate-500 mb-6">Board Sample Papers, Important Theorems & Solved PDFs.</p>
                     </div>
@@ -281,9 +273,7 @@
                 <!-- 11th -->
                 <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200 hover:border-amber-500 transition flex flex-col justify-between card-shadow">
                     <div>
-                        <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-2xl flex items-center justify-center font-black text-lg mb-4">
-                            11th
-                        </div>
+                        <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-2xl flex items-center justify-center font-black text-lg mb-4">11th</div>
                         <h3 class="font-bold text-slate-900 text-lg mb-1">Class 11th Math</h3>
                         <p class="text-xs text-slate-500 mb-6">Algebra, Trigonometry & Calculus Concept PDFs.</p>
                     </div>
@@ -295,9 +285,7 @@
                 <!-- 12th -->
                 <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200 hover:border-indigo-500 transition flex flex-col justify-between card-shadow">
                     <div>
-                        <div class="w-12 h-12 bg-indigo-100 text-indigo-700 rounded-2xl flex items-center justify-center font-black text-lg mb-4">
-                            12th
-                        </div>
+                        <div class="w-12 h-12 bg-indigo-100 text-indigo-700 rounded-2xl flex items-center justify-center font-black text-lg mb-4">12th</div>
                         <h3 class="font-bold text-slate-900 text-lg mb-1">Class 12th Board</h3>
                         <p class="text-xs text-slate-500 mb-6">Matrices, Calculus, Vectors & Board Practice Question Sets.</p>
                     </div>
@@ -305,7 +293,6 @@
                         <i class="fa-solid fa-folder-open mr-2"></i> Open 12th Drive Folder
                     </a>
                 </div>
-
             </div>
         </div>
     </section>
@@ -412,7 +399,7 @@
         <p class="text-slate-500">Mathematics Mentorship for Class 9th, 10th, 11th, 12th, LT Grade & Competitive Exams.</p>
     </footer>
 
-    <!-- JavaScript for Batch Selector -->
+    <!-- JavaScript Handlers -->
     <script>
         function updateBatchInfo() {
             const val = document.getElementById('classSelector').value;
@@ -433,6 +420,17 @@
                 tests.innerText = "Descriptive & Objective Test Series";
                 material.innerText = "Advanced Pure & Applied Math PDFs";
             }
+        }
+
+        function sendWhatsAppQuery(event) {
+            event.preventDefault();
+            const name = document.getElementById('studentName').value;
+            const phone = document.getElementById('studentPhone').value;
+            const targetClass = document.getElementById('studentClass').value;
+            const msg = document.getElementById('studentMsg').value;
+
+            const text = `Hello Mr. Chandra, New Admission Inquiry:%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Target Class:* ${targetClass}%0A*Message:* ${msg}`;
+            window.open(`https://wa.me/919027126704?text=${text}`, '_blank');
         }
     </script>
 </body>
