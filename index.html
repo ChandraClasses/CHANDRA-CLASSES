@@ -1,792 +1,380 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chandra Classes - Quality Coaching in Kurali, Meerut</title>
-    
+    <title>CHANDRA CLASSES | Mathematics Institute by Mr. Chandra (Kurali, Meerut)</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- FontAwesome Icons CDN -->
+    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Google Fonts Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            scroll-behavior: smooth;
-        }
-        .gradient-bg {
-            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
-        }
-        .glass-card {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-        }
-        .pdf-card {
-            transition: all 0.25s ease-in-out;
-        }
-        .pdf-card:hover {
-            transform: translateY(-4px);
+        body { font-family: 'Poppins', sans-serif; }
+        .math-bg {
+            background-color: #0f172a;
+            background-image: radial-gradient(#1e293b 1px, transparent 1px);
+            background-size: 24px 24px;
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
 
-    <div class="bg-indigo-950 text-slate-200 text-xs sm:text-sm py-2 px-4 border-b border-indigo-900">
+    <!-- Top Info Bar -->
+    <div class="bg-indigo-900 text-white text-xs sm:text-sm py-2 px-4">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
             <div class="flex items-center space-x-4">
-                <span><i class="fa-solid font-bold text-amber-400 fa-location-dot mr-1.5"></i> Kurali, Meerut (U.P.)</span>
-                <span class="hidden md:inline text-indigo-700">|</span>
-                <a href="tel:9027126704" class="hover:text-amber-300 font-semibold transition-colors">
-                    <i class="fa-solid text-emerald-400 fa-phone mr-1.5"></i> +91 90271 26704
-                </a>
+                <span><i class="fa-solid fa-location-dot text-amber-400 mr-1"></i> Kurali, Meerut (U.P.)</span>
+                <span><i class="fa-solid fa-phone text-amber-400 mr-1"></i> <a href="tel:9027126704" class="hover:underline">9027126704</a></span>
             </div>
-            <div class="flex items-center space-x-3 text-xs">
-                <span class="bg-amber-400 text-slate-900 font-bold px-2 py-0.5 rounded shadow-sm">New Session 2026-27</span>
-                <span class="hidden sm:inline">Admissions open for Class 9th-12th & State Exams!</span>
+            <div class="flex items-center space-x-3">
+                <span class="bg-amber-500 text-slate-900 px-2 py-0.5 rounded font-bold text-xs">Pure & Applied Math</span>
+                <span>LT Grade | UPPCS Mains | Board Exams</span>
             </div>
         </div>
     </div>
 
-    <header class="sticky top-0 z-40 bg-white shadow-sm border-b border-slate-100">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md sticky top-0 z-40">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <!-- Logo -->
+            <div class="flex justify-between h-20 items-center">
                 <div class="flex items-center space-x-3">
-                    <div class="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center text-white text-2xl font-black shadow-md shadow-blue-500/20">
-                        CC
+                    <div class="bg-indigo-700 text-white p-3 rounded-xl shadow-lg">
+                        <i class="fa-solid fa-square-root-variable text-2xl"></i>
                     </div>
                     <div>
-                        <a href="#" class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight leading-none block">
-                            CHANDRA <span class="text-blue-600">CLASSES</span>
+                        <h1 class="text-xl sm:text-2xl font-extrabold text-indigo-900 tracking-tight">CHANDRA CLASSES</h1>
+                        <p class="text-xs text-amber-600 font-semibold tracking-wider uppercase">Excellence in Mathematics</p>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-6 font-medium text-slate-700">
+                    <a href="#about-mentor" class="hover:text-indigo-600 transition">Mentor Profile</a>
+                    <a href="#courses" class="hover:text-indigo-600 transition">Math Batches</a>
+                    <a href="#pdfs" class="hover:text-indigo-600 transition">Study Material (PDFs)</a>
+                    <a href="#contact" class="bg-indigo-600 text-white px-5 py-2.5 rounded-lg hover:bg-indigo-700 transition shadow">Contact & Admission</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="math-bg text-white py-16 lg:py-24 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="inline-block bg-indigo-500/30 text-indigo-300 border border-indigo-400/30 text-sm font-semibold px-4 py-1.5 rounded-full">
+                        <i class="fa-solid fa-graduation-cap mr-2"></i> Guided by Specialist Math Educator
+                    </span>
+                    <h2 class="text-3xl sm:text-5xl font-extrabold leading-tight">
+                        Master Mathematics with Concept-Driven & Analytical Guidance
+                    </h2>
+                    <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+                        Specialized coaching for <strong class="text-amber-400">LT Grade Math</strong>, <strong class="text-amber-400">UPPCS Mains Mathematics</strong>, and <strong class="text-amber-400">Board Exams (10th & 12th)</strong>. Learn step-by-step problem-solving techniques from <strong class="text-white">Mr. Chandra</strong>.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-2">
+                        <a href="#courses" class="bg-amber-500 text-slate-900 font-bold px-6 py-3.5 rounded-lg hover:bg-amber-400 transition shadow-lg flex items-center">
+                            View Math Batches <i class="fa-solid fa-arrow-right ml-2"></i>
                         </a>
-                        <span class="text-xs text-slate-500 font-medium tracking-wide">KURALI, MEERUT</span>
+                        <a href="tel:9027126704" class="bg-slate-800 border border-slate-700 text-white font-semibold px-6 py-3.5 rounded-lg hover:bg-slate-700 transition flex items-center">
+                            <i class="fa-solid fa-phone mr-2 text-green-400"></i> Call: 9027126704
+                        </a>
                     </div>
                 </div>
 
-                <!-- Desktop Nav Links -->
-                <nav class="hidden md:flex items-center space-x-8 font-medium text-slate-600 text-sm">
-                    <a href="#home" class="hover:text-blue-600 transition-colors">Home</a>
-                    <a href="#about" class="hover:text-blue-600 transition-colors">About Us</a>
-                    <a href="#courses" class="hover:text-blue-600 transition-colors">Courses</a>
-                    <a href="#pdfs" class="hover:text-blue-600 transition-colors"><i class="fa-solid fa-file-pdf text-red-500 mr-1"></i> Notes & PDFs</a>
-                    <a href="#reviews" class="hover:text-blue-600 transition-colors">Reviews</a>
-                    <a href="#contact" class="hover:text-blue-600 transition-colors">Contact</a>
-                </nav>
+                <!-- Quick Inquiry Card -->
+                <div class="lg:col-span-5 bg-white text-slate-800 p-6 sm:p-8 rounded-2xl shadow-2xl border border-slate-100">
+                    <h3 class="text-xl font-bold text-indigo-900 mb-2">Book a Demo / Inquiry</h3>
+                    <p class="text-xs text-slate-500 mb-6">Send your details to connect directly with Mr. Chandra.</p>
+                    <form onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-600 mb-1">Student Name *</label>
+                            <input type="text" required placeholder="Enter full name" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-600 mb-1">Mobile Number *</label>
+                            <input type="tel" required placeholder="10-digit phone number" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-600 mb-1">Target Exam / Course *</label>
+                            <select required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-sm">
+                                <option value="">Select your course</option>
+                                <option value="LT Grade Math">LT Grade Mathematics</option>
+                                <option value="UPPCS Mains Math">UPPCS Mains Math Special</option>
+                                <option value="Class 11th & 12th">Class 11th / 12th Board Math</option>
+                                <option value="Class 9th & 10th">Class 9th / 10th Math</option>
+                                <option value="Competitive Entrance">Other Competitive Math</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="w-full bg-indigo-700 hover:bg-indigo-800 text-white font-bold py-3 rounded-lg transition shadow-md">
+                            Submit Inquiry <i class="fa-solid fa-paper-plane ml-2"></i>
+                        </button>
+                    </form>
+                    <div id="form-success" class="hidden mt-4 p-3 bg-emerald-50 text-emerald-700 border border-emerald-200 rounded-lg text-xs font-medium text-center">
+                        <i class="fa-solid fa-circle-check mr-1"></i> Inquiry submitted successfully! We will contact you shortly.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <!-- Header CTA Button -->
-                <div class="hidden md:flex items-center space-x-4">
-                    <a href="#inquiry" class="gradient-bg text-white px-5 py-2.5 rounded-xl font-semibold hover:opacity-95 shadow-lg shadow-blue-500/25 transition-all text-sm">
-                        Enroll Now <i class="fa-solid fa-arrow-right ml-1"></i>
+    <!-- Teacher Profile / About Mentor Section -->
+    <section id="about-mentor" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-indigo-600 font-bold uppercase tracking-wider text-xs">Faculty Profile</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Meet Your Mentor: Mr. Chandra</h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 items-stretch">
+                <!-- Card 1: Expertise -->
+                <div class="bg-indigo-50/50 p-8 rounded-2xl border border-indigo-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-indigo-600 text-white rounded-xl flex items-center justify-center text-xl mb-6 shadow">
+                        <i class="fa-solid fa-book-bookmark"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-indigo-950 mb-3">Core Subject Expertise</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Specialized in both Pure and Applied Mathematics topics required for high-level examinations:
+                    </p>
+                    <ul class="text-xs text-slate-700 space-y-2 font-medium">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-indigo-600 mr-2"></i> Advanced Algebra & Matrices</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-indigo-600 mr-2"></i> 2D & 3D Analytical Geometry</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-indigo-600 mr-2"></i> Calculus & Real Analysis</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-indigo-600 mr-2"></i> Convergence & Divergence of Series</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2: Pedagogy -->
+                <div class="bg-amber-50/50 p-8 rounded-2xl border border-amber-100 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-amber-500 text-slate-900 rounded-xl flex items-center justify-center text-xl mb-6 shadow">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Teaching Methodology</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Mr. Chandra believes in building strong foundational clarity rather than rote memorization:
+                    </p>
+                    <ul class="text-xs text-slate-700 space-y-2 font-medium">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-amber-600 mr-2"></i> Step-by-step problem derivation</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-amber-600 mr-2"></i> Descriptive answer writing strategy for Mains</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-amber-600 mr-2"></i> Formula memory tricks & shortcuts</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-amber-600 mr-2"></i> Individual doubt clearance sessions</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3: Classroom Features -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-slate-800 text-white rounded-xl flex items-center justify-center text-xl mb-6 shadow">
+                        <i class="fa-solid fa-users-rectangle"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Classroom Experience</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Designed to deliver maximum personal attention and consistent practice:
+                    </p>
+                    <ul class="text-xs text-slate-700 space-y-2 font-medium">
+                        <li class="flex items-center"><i class="fa-solid fa-check text-slate-800 mr-2"></i> Small batch sizes for focused learning</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-slate-800 mr-2"></i> Topic-wise practice question sheets</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-slate-800 mr-2"></i> Regular test series & performance tracking</li>
+                        <li class="flex items-center"><i class="fa-solid fa-check text-slate-800 mr-2"></i> Offline interactive classes at Kurali</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mathematics Batches Section -->
+    <section id="courses" class="py-16 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-indigo-600 font-bold uppercase tracking-wider text-xs">Offered Batches</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Mathematics Special Batches</h2>
+                <p class="text-slate-600 text-sm mt-2">Comprehensive syllabus coverage tailored for each target examination.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Batch 1 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-lg transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="bg-indigo-100 text-indigo-700 text-xs font-bold px-3 py-1 rounded-full">Recruitment Exam</span>
+                            <i class="fa-solid fa-graduation-cap text-indigo-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">LT Grade Mathematics</h3>
+                        <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                            Complete coverage of LT Grade Math syllabus including 2D/3D Geometry, Algebra, Calculus, and Trigonometry with mains-level practice.
+                        </p>
+                    </div>
+                    <a href="#contact" class="block text-center bg-indigo-50 hover:bg-indigo-600 hover:text-white text-indigo-700 font-semibold py-2.5 rounded-lg text-sm transition">
+                        Enquire For Batch
                     </a>
                 </div>
 
-                <!-- Mobile Navigation Toggle -->
-                <button id="mobile-menu-btn" class="md:hidden text-slate-700 hover:text-blue-600 focus:outline-none p-2" aria-label="Toggle Navigation">
-                    <i class="fa-solid fa-bars text-2xl"></i>
-                </button>
-            </div>
-        </div>
-
-        <!-- Mobile Drawer -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 px-4 pt-3 pb-6 space-y-3">
-            <a href="#home" class="block px-3 py-2 rounded-lg text-slate-700 font-medium hover:bg-slate-50">Home</a>
-            <a href="#about" class="block px-3 py-2 rounded-lg text-slate-700 font-medium hover:bg-slate-50">About Us</a>
-            <a href="#courses" class="block px-3 py-2 rounded-lg text-slate-700 font-medium hover:bg-slate-50">Courses & Batches</a>
-            <a href="#pdfs" class="block px-3 py-2 rounded-lg text-slate-700 font-medium hover:bg-slate-50"><i class="fa-solid fa-file-pdf text-red-500 mr-1"></i> Notes & Study PDFs</a>
-            <a href="#reviews" class="block px-3 py-2 rounded-lg text-slate-700 font-medium hover:bg-slate-50">Student Reviews</a>
-            <a href="#contact" class="block px-3 py-2 rounded-lg text-slate-700 font-medium hover:bg-slate-50">Contact Us</a>
-            <a href="#inquiry" class="block w-full text-center gradient-bg text-white py-3 rounded-xl font-bold mt-2">
-                Join Course Now
-            </a>
-        </div>
-    </header>
-
-    <section id="home" class="relative gradient-bg text-white pt-12 pb-20 overflow-hidden">
-        <div class="absolute inset-0 bg-black/10"></div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid md:grid-cols-12 gap-12 items-center">
-                
-                <!-- Left Hero Text -->
-                <div class="md:col-span-7 space-y-6 text-center md:text-left">
-                    <div class="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wider uppercase text-amber-300 border border-white/20">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        <span>#1 Coaching Institute in Kurali (Meerut)</span>
-                    </div>
-
-                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
-                        Empowering Minds, <br/>
-                        <span class="text-amber-400">Building Bright Futures</span>
-                    </h1>
-
-                    <p class="text-slate-100 text-base sm:text-lg max-w-2xl font-normal leading-relaxed">
-                        Chandra Classes provides top-tier coaching for Class 9th-12th board preparation and state competitive exams. Master your concepts with personal attention in Kurali.
-                    </p>
-
-                    <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-2">
-                        <a href="#courses" class="w-full sm:w-auto bg-amber-400 hover:bg-amber-300 text-slate-900 font-bold px-7 py-3.5 rounded-xl shadow-lg transition-all text-center">
-                            Explore All Batches
-                        </a>
-                        <a href="#pdfs" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 border border-white/30 text-white font-semibold px-7 py-3.5 rounded-xl backdrop-blur-md transition-all text-center">
-                            <i class="fa-solid fa-download mr-1"></i> Free Notes (PDF)
-                        </a>
-                    </div>
-
-                    <!-- Statistics -->
-                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-white/15 max-w-xl mx-auto md:mx-0 text-center md:text-left">
-                        <div>
-                            <div class="text-2xl sm:text-3xl font-extrabold text-amber-400">1000+</div>
-                            <div class="text-xs text-slate-200">Students Taught</div>
+                <!-- Batch 2 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-lg transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full">Descriptive Special</span>
+                            <i class="fa-solid fa-pen-nib text-amber-600 text-2xl"></i>
                         </div>
-                        <div>
-                            <div class="text-2xl sm:text-3xl font-extrabold text-amber-400">95%</div>
-                            <div class="text-xs text-slate-200">Pass Percentage</div>
-                        </div>
-                        <div>
-                            <div class="text-2xl sm:text-3xl font-extrabold text-amber-400">10+</div>
-                            <div class="text-xs text-slate-200">Years Experience</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Quick Counseling Form Card -->
-                <div class="md:col-span-5">
-                    <div class="glass-card text-slate-800 rounded-2xl p-6 sm:p-8 shadow-2xl border border-white">
-                        <div class="text-center mb-6">
-                            <span class="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-3 py-1 rounded-full">Quick Counseling</span>
-                            <h3 class="text-xl sm:text-2xl font-bold mt-2">Book Free Demo Class</h3>
-                            <p class="text-xs text-slate-500 mt-1">Fill out the form & we will contact you immediately.</p>
-                        </div>
-
-                        <form id="hero-quick-form" class="space-y-4">
-                            <div>
-                                <label class="block text-xs font-bold text-slate-700 mb-1">Student Name</label>
-                                <input type="text" required placeholder="Enter student's full name" class="w-full px-4 py-2.5 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                            </div>
-                            <div>
-                                <label class="block text-xs font-bold text-slate-700 mb-1">Mobile Number</label>
-                                <input type="tel" required placeholder="10-digit mobile number" class="w-full px-4 py-2.5 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                            </div>
-                            <div>
-                                <label class="block text-xs font-bold text-slate-700 mb-1">Class / Target Exam</label>
-                                <select required class="w-full px-4 py-2.5 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white">
-                                    <option value="">Select your batch</option>
-                                    <option value="class9_10">Class 9th & 10th (All Subjects)</option>
-                                    <option value="class11_12">Class 11th & 12th (PCB/PCM)</option>
-                                    <option value="competitive">General Competition / State Exams</option>
-                                    <option value="maths_special">Special Mathematics Batch</option>
-                                </select>
-                            </div>
-                            <button type="submit" class="w-full gradient-bg text-white font-bold py-3 rounded-lg shadow-md hover:opacity-95 transition-all text-sm">
-                                Call Me Back <i class="fa-solid fa-paper-plane ml-1"></i>
-                            </button>
-                        </form>
-                        <p id="hero-form-msg" class="text-xs text-emerald-600 font-semibold text-center mt-3 hidden">
-                            <i class="fa-solid fa-circle-check"></i> Thank you! We will call you shortly.
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">UPPCS Mains Math Special</h3>
+                        <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                            Focused guidance for UPPCS Mains optional/descriptive questions. Special emphasis on Convergence & Divergence of Series and Real Analysis.
                         </p>
                     </div>
+                    <a href="#contact" class="block text-center bg-indigo-50 hover:bg-indigo-600 hover:text-white text-indigo-700 font-semibold py-2.5 rounded-lg text-sm transition">
+                        Enquire For Batch
+                    </a>
                 </div>
 
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600 mb-2">Why Choose Us</h2>
-                <p class="text-3xl sm:text-4xl font-extrabold text-slate-900">Dedicated to Student Success in Kurali</p>
-                <div class="w-16 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Feature Card 1 -->
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all group">
-                    <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-chalkboard-user"></i>
+                <!-- Batch 3 -->
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 hover:shadow-lg transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full">Board Exam</span>
+                            <i class="fa-solid fa-calculator text-emerald-600 text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Class 11th & 12th Board Math</h3>
+                        <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+                            NCERT based complete syllabus, board question paper solving, sample papers, and regular weekly revision tests.
+                        </p>
                     </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Expert Teachers</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">
-                        Subject specialists focusing on core concepts, clear doubt-solving, and practical problem-solving strategies.
-                    </p>
-                </div>
-
-                <!-- Feature Card 2 -->
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all group">
-                    <div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-file-lines"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Regular Test Series</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">
-                        Weekly chapter tests and monthly mock board exams with detailed progress report cards for parents.
-                    </p>
-                </div>
-
-                <!-- Feature Card 3 -->
-                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-xl transition-all group">
-                    <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-user-check"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Personal Focus</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">
-                        Limited students per batch ensuring every single student receives individual attention and guidance.
-                    </p>
+                    <a href="#contact" class="block text-center bg-indigo-50 hover:bg-indigo-600 hover:text-white text-indigo-700 font-semibold py-2.5 rounded-lg text-sm transition">
+                        Enquire For Batch
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="courses" class="py-20 bg-slate-100">
+    <!-- Study Material / PDFs Section -->
+    <section id="pdfs" class="py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-12">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600 mb-2">Our Batches</h2>
-                <p class="text-3xl sm:text-4xl font-extrabold text-slate-900">Featured Courses & Batches</p>
-                <p class="text-slate-600 text-sm mt-2">Type below to quickly filter batches by class or subject.</p>
+                <span class="text-indigo-600 font-bold uppercase tracking-wider text-xs">Free Resources</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Math Practice Sets & PDF Notes</h2>
+                <p class="text-slate-600 text-sm mt-2">Download practice sets directly or view sample syllabus PDFs.</p>
             </div>
 
-            <!-- Real-time Filter Bar -->
-            <div class="max-w-xl mx-auto mb-10">
-                <div class="relative">
-                    <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
-                    <input type="text" id="course-search" placeholder="Search batch (e.g., Maths, PCB, Competition)..." 
-                           class="w-full pl-11 pr-4 py-3.5 rounded-xl border border-slate-200 bg-white text-sm shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                </div>
-            </div>
-
-            <!-- Course Grid -->
-            <div id="course-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <!-- Course Item 1 -->
-                <div class="course-card bg-white rounded-2xl shadow-md overflow-hidden border border-slate-200/80 flex flex-col hover:shadow-xl transition-all" data-title="Mathematics Class 9 10 11 12 Board Exam Special">
-                    <div class="gradient-bg p-6 text-white relative">
-                        <span class="bg-amber-400 text-slate-900 font-extrabold text-xs px-2.5 py-1 rounded-full uppercase tracking-wider">Top Recommended</span>
-                        <h3 class="text-2xl font-bold mt-3">Special Mathematics</h3>
-                        <p class="text-blue-100 text-xs mt-1">Class 9th, 10th, 11th & 12th</p>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
-                        <ul class="space-y-2 text-xs text-slate-600">
-                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Complete NCERT + RD Sharma problems</li>
-                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Daily Practice Problem Sets (DPPs)</li>
-                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Special focus on board sample papers</li>
-                        </ul>
-                        <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-                            <span class="text-xs text-slate-500"><i class="fa-regular fa-clock mr-1"></i> Morning / Evening</span>
-                            <a href="#inquiry" class="text-blue-600 font-bold text-xs hover:underline">Enroll Now &rarr;</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Course Item 2 -->
-                <div class="course-card bg-white rounded-2xl shadow-md overflow-hidden border border-slate-200/80 flex flex-col hover:shadow-xl transition-all" data-title="Science Stream Physics Chemistry Biology Board">
-                    <div class="gradient-bg p-6 text-white relative">
-                        <span class="bg-blue-400 text-white font-extrabold text-xs px-2.5 py-1 rounded-full uppercase tracking-wider">Regular Batch</span>
-                        <h3 class="text-2xl font-bold mt-3">Science Batch (PCB/PCM)</h3>
-                        <p class="text-blue-100 text-xs mt-1">Class 11th & 12th Boards</p>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
-                        <ul class="space-y-2 text-xs text-slate-600">
-                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Physics & Chemistry Numerical Mastery</li>
-                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Biology Diagram & Theory Practice</li>
-                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Last 10-Year Board Paper Solutions</li>
-                        </ul>
-                        <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-                            <span class="text-xs text-slate-500"><i class="fa-regular fa-clock mr-1"></i> Evening Batch</span>
-                            <a href="#inquiry" class="text-blue-600 font-bold text-xs hover:underline">Enroll Now &rarr;</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Course Item 3 -->
-                <div class="course-card bg-white rounded-2xl shadow-md overflow-hidden border border-slate-200/80 flex flex-col hover:shadow-xl transition-all" data-title="General Competition UPPCS LT Grade UP Police SSC Exam">
-                    <div class="gradient-bg p-6 text-white relative">
-                        <span class="bg-emerald-400 text-slate-900 font-extrabold text-xs px-2.5 py-1 rounded-full uppercase tracking-wider">Competitive Special</span>
-                        <h3 class="text-2xl font-bold mt-3">General Competition</h3>
-                        <p class="text-blue-100 text-xs mt-1">UPPCS, LT Grade, UP Police & SSC</p>
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
-                        <ul class="space-y-2 text-xs text-slate-600">
-                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Complete GS (History, Polity, Geo, UP GK)</li>
-                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Short Tricks for Quantitative Aptitude</li>
-                            <li class="flex items-center"><i class="fa-solid fa-check text-emerald-500 mr-2"></i> Weekly Mock Online/Offline Tests</li>
-                        </ul>
-                        <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
-                            <span class="text-xs text-slate-500"><i class="fa-regular fa-clock mr-1"></i> Morning Batch</span>
-                            <a href="#inquiry" class="text-blue-600 font-bold text-xs hover:underline">Enroll Now &rarr;</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="pdfs" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <span class="text-xs font-bold uppercase tracking-widest text-red-600 bg-red-50 px-3 py-1 rounded-full">Free Resources</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Download Notes & Test Series (PDF)</h2>
-                <p class="text-slate-600 text-sm mt-2">Click any file below to view or download instantly.</p>
-                <div class="w-16 h-1 bg-red-500 mx-auto mt-4 rounded-full"></div>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-6">
-                
-                <!-- PDF Card 1 -->
-                <div class="pdf-card bg-slate-50 border border-slate-200 rounded-2xl p-6 flex flex-col justify-between">
-                    <div class="flex items-start justify-between">
-                        <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center text-2xl font-bold">
-                            <i class="fa-solid fa-file-pdf"></i>
-                        </div>
-                        <span class="text-[10px] font-bold bg-slate-200 text-slate-700 px-2 py-0.5 rounded">PDF • 1.5 MB</span>
-                    </div>
-                    <div class="mt-4">
-                        <h3 class="font-bold text-slate-900 text-base">Class 10th Maths Formula Sheet</h3>
-                        <p class="text-xs text-slate-500 mt-1">Quick revision notes for geometry, trigonometry, and algebra formulas.</p>
-                    </div>
-                    <div class="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between gap-2">
-                        <!-- Direct Link (Ensure syllabus.pdf is uploaded to same folder) -->
-                        <a href="syllabus.pdf" download class="bg-slate-900 hover:bg-slate-800 text-white px-4 py-2 rounded-lg font-bold text-xs flex items-center space-x-1">
-                            <i class="fa-solid fa-download"></i>
-                            <span>Download</span>
-                        </a>
-                        <button onclick="previewPdf('syllabus.pdf', 'Class 10th Maths Formula Sheet')" class="text-blue-600 border border-blue-200 hover:bg-blue-50 px-3 py-2 rounded-lg font-bold text-xs flex items-center space-x-1">
-                            <i class="fa-solid fa-eye"></i>
-                            <span>Preview</span>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PDF Card 2 -->
-                <div class="pdf-card bg-slate-50 border border-slate-200 rounded-2xl p-6 flex flex-col justify-between">
-                    <div class="flex items-start justify-between">
-                        <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center text-2xl font-bold">
-                            <i class="fa-solid fa-file-pdf"></i>
-                        </div>
-                        <span class="text-[10px] font-bold bg-slate-200 text-slate-700 px-2 py-0.5 rounded">PDF • 2.8 MB</span>
-                    </div>
-                    <div class="mt-4">
-                        <h3 class="font-bold text-slate-900 text-base">Class 12th Physics Board Sample Paper</h3>
-                        <p class="text-xs text-slate-500 mt-1">Expected board exam questions with detailed step-by-step solutions.</p>
-                    </div>
-                    <div class="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between gap-2">
-                        <a href="physics-sample-paper.pdf" download class="bg-slate-900 hover:bg-slate-800 text-white px-4 py-2 rounded-lg font-bold text-xs flex items-center space-x-1">
-                            <i class="fa-solid fa-download"></i>
-                            <span>Download</span>
-                        </a>
-                        <button onclick="previewPdf('physics-sample-paper.pdf', 'Class 12th Physics Sample Paper')" class="text-blue-600 border border-blue-200 hover:bg-blue-50 px-3 py-2 rounded-lg font-bold text-xs flex items-center space-x-1">
-                            <i class="fa-solid fa-eye"></i>
-                            <span>Preview</span>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- PDF Card 3 -->
-                <div class="pdf-card bg-slate-50 border border-slate-200 rounded-2xl p-6 flex flex-col justify-between">
-                    <div class="flex items-start justify-between">
-                        <div class="w-12 h-12 bg-red-100 text-red-600 rounded-xl flex items-center justify-center text-2xl font-bold">
-                            <i class="fa-solid fa-file-pdf"></i>
-                        </div>
-                        <span class="text-[10px] font-bold bg-slate-200 text-slate-700 px-2 py-0.5 rounded">PDF • 3.1 MB</span>
-                    </div>
-                    <div class="mt-4">
-                        <h3 class="font-bold text-slate-900 text-base">General Competition UP GK Notes</h3>
-                        <p class="text-xs text-slate-500 mt-1">Comprehensive General Knowledge notes for state police and LT Grade exams.</p>
-                    </div>
-                    <div class="mt-6 pt-4 border-t border-slate-200 flex items-center justify-between gap-2">
-                        <a href="up-gk-notes.pdf" download class="bg-slate-900 hover:bg-slate-800 text-white px-4 py-2 rounded-lg font-bold text-xs flex items-center space-x-1">
-                            <i class="fa-solid fa-download"></i>
-                            <span>Download</span>
-                        </a>
-                        <button onclick="previewPdf('up-gk-notes.pdf', 'UP GK State Exam Notes')" class="text-blue-600 border border-blue-200 hover:bg-blue-50 px-3 py-2 rounded-lg font-bold text-xs flex items-center space-x-1">
-                            <i class="fa-solid fa-eye"></i>
-                            <span>Preview</span>
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <div id="pdf-modal" class="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
-        <div class="bg-white rounded-2xl max-w-4xl w-full h-[85vh] flex flex-col overflow-hidden shadow-2xl relative">
-            <div class="px-6 py-4 bg-slate-900 text-white flex items-center justify-between">
-                <div class="flex items-center space-x-2">
-                    <i class="fa-solid fa-file-pdf text-red-400"></i>
-                    <h3 id="pdf-modal-title" class="font-bold text-sm truncate max-w-md">PDF Document Preview</h3>
-                </div>
-                <button onclick="closePdfModal()" class="text-slate-400 hover:text-white text-xl">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
-            <div class="flex-1 bg-slate-100 p-2">
-                <iframe id="pdf-iframe" src="" class="w-full h-full rounded-lg border border-slate-200"></iframe>
-            </div>
-            <div class="px-6 py-3 bg-white border-t border-slate-200 flex justify-between items-center">
-                <span class="text-xs text-slate-500">Note: Ensure PDF file is uploaded in repository to preview.</span>
-                <a id="pdf-modal-download" href="#" download class="bg-blue-600 text-white px-4 py-1.5 rounded-lg text-xs font-bold hover:bg-blue-700">
-                    <i class="fa-solid fa-download mr-1"></i> Download PDF
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <section id="reviews" class="py-20 bg-slate-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-blue-600 mb-2">Success Stories</h2>
-                <p class="text-3xl sm:text-4xl font-extrabold text-slate-900">What Our Students & Parents Say</p>
-                <div class="w-16 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Review 1 -->
-                <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-4">
-                    <div class="flex text-amber-400 text-sm space-x-1">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-slate-600 text-xs leading-relaxed italic">
-                        "Chandra Classes helped me clear basic concepts in Mathematics and Science. The test series gave me huge confidence for my Class 10 board exams!"
-                    </p>
-                    <div class="flex items-center space-x-3 pt-2">
-                        <div class="w-10 h-10 gradient-bg rounded-full text-white font-bold flex items-center justify-center text-sm">
-                            AS
-                        </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- PDF Item 1 -->
+                <div class="p-6 rounded-xl border border-slate-200 bg-slate-50 flex items-center justify-between">
+                    <div class="flex items-center space-x-4">
+                        <div class="text-red-600 text-3xl"><i class="fa-solid fa-file-pdf"></i></div>
                         <div>
-                            <h4 class="font-bold text-slate-900 text-sm">Aman Sharma</h4>
-                            <p class="text-xs text-slate-500">Class 10th Board Student</p>
+                            <h4 class="font-bold text-slate-900 text-sm">Algebra Unit Practice Set</h4>
+                            <p class="text-xs text-slate-500">20 Mains Level Questions (PDF)</p>
                         </div>
                     </div>
+                    <a href="algebra-practice-set.pdf" download class="bg-indigo-600 hover:bg-indigo-700 text-white text-xs px-3 py-2 rounded font-medium transition">
+                        <i class="fa-solid fa-download"></i>
+                    </a>
                 </div>
 
-                <!-- Review 2 -->
-                <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-4">
-                    <div class="flex text-amber-400 text-sm space-x-1">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-slate-600 text-xs leading-relaxed italic">
-                        "The best coaching center in Kurali! Faculty members are very supportive and give personal attention to every student."
-                    </p>
-                    <div class="flex items-center space-x-3 pt-2">
-                        <div class="w-10 h-10 bg-amber-500 rounded-full text-white font-bold flex items-center justify-center text-sm">
-                            RV
-                        </div>
+                <!-- PDF Item 2 -->
+                <div class="p-6 rounded-xl border border-slate-200 bg-slate-50 flex items-center justify-between">
+                    <div class="flex items-center space-x-4">
+                        <div class="text-red-600 text-3xl"><i class="fa-solid fa-file-pdf"></i></div>
                         <div>
-                            <h4 class="font-bold text-slate-900 text-sm">Ritu Verma</h4>
-                            <p class="text-xs text-slate-500">Class 12th PCB Student</p>
+                            <h4 class="font-bold text-slate-900 text-sm">Convergence & Divergence</h4>
+                            <p class="text-xs text-slate-500">UPPCS Mains Questions (PDF)</p>
                         </div>
                     </div>
+                    <a href="convergence-series.pdf" download class="bg-indigo-600 hover:bg-indigo-700 text-white text-xs px-3 py-2 rounded font-medium transition">
+                        <i class="fa-solid fa-download"></i>
+                    </a>
                 </div>
 
-                <!-- Review 3 -->
-                <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-4">
-                    <div class="flex text-amber-400 text-sm space-x-1">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="text-slate-600 text-xs leading-relaxed italic">
-                        "Excellent quality notes and state competitive exam preparation. I recommend Chandra Classes to everyone in Meerut region."
-                    </p>
-                    <div class="flex items-center space-x-3 pt-2">
-                        <div class="w-10 h-10 bg-emerald-600 rounded-full text-white font-bold flex items-center justify-center text-sm">
-                            VK
-                        </div>
+                <!-- PDF Item 3 -->
+                <div class="p-6 rounded-xl border border-slate-200 bg-slate-50 flex items-center justify-between">
+                    <div class="flex items-center space-x-4">
+                        <div class="text-red-600 text-3xl"><i class="fa-solid fa-file-pdf"></i></div>
                         <div>
-                            <h4 class="font-bold text-slate-900 text-sm">Vikas Kumar</h4>
-                            <p class="text-xs text-slate-500">Competitive Aspirant</p>
+                            <h4 class="font-bold text-slate-900 text-sm">2D Geometry LT Grade</h4>
+                            <p class="text-xs text-slate-500">Syllabus & Formulas (PDF)</p>
                         </div>
                     </div>
+                    <a href="2d-geometry-notes.pdf" download class="bg-indigo-600 hover:bg-indigo-700 text-white text-xs px-3 py-2 rounded font-medium transition">
+                        <i class="fa-solid fa-download"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="inquiry" class="py-20 gradient-bg text-white">
+    <!-- Contact & Location Section -->
+    <section id="contact" class="py-16 bg-slate-900 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid md:grid-cols-12 gap-12 items-center">
-                
-                <!-- Institute Info -->
-                <div id="contact" class="md:col-span-5 space-y-6">
-                    <span class="bg-amber-400 text-slate-900 font-extrabold text-xs px-3 py-1 rounded-full uppercase tracking-wider">Contact Details</span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold">Visit Our Institute in Kurali</h2>
-                    <p class="text-slate-100 text-sm leading-relaxed">
-                        Have questions about admissions, fees, or batch timings? Feel free to call us or visit our classroom directly.
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="text-amber-400 font-bold uppercase tracking-wider text-xs">Reach Out To Us</span>
+                    <h2 class="text-3xl font-extrabold">Visit CHANDRA CLASSES or Call Today</h2>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Join our offline classroom batches at Kurali, Meerut or contact Mr. Chandra directly for course inquiries and batch timings.
                     </p>
 
                     <div class="space-y-4 pt-4">
                         <div class="flex items-start space-x-4">
-                            <div class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center text-amber-400 text-lg flex-shrink-0">
+                            <div class="bg-indigo-800 p-3 rounded-lg text-amber-400 text-lg">
                                 <i class="fa-solid fa-location-dot"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-sm">Address</h4>
-                                <p class="text-xs text-slate-200 mt-0.5">Kurali, Meerut, Uttar Pradesh - 250001</p>
+                                <h4 class="font-bold text-sm">Institute Address</h4>
+                                <p class="text-xs text-slate-300">CHANDRA CLASSES, Kurali, Meerut, Uttar Pradesh</p>
                             </div>
                         </div>
 
                         <div class="flex items-start space-x-4">
-                            <div class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center text-emerald-400 text-lg flex-shrink-0">
+                            <div class="bg-indigo-800 p-3 rounded-lg text-amber-400 text-lg">
                                 <i class="fa-solid fa-phone"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-sm">Phone / WhatsApp</h4>
-                                <a href="tel:9027126704" class="text-xs text-amber-300 font-bold hover:underline block mt-0.5">
-                                    +91 90271 26704
-                                </a>
+                                <h4 class="font-bold text-sm">Mobile / WhatsApp</h4>
+                                <p class="text-xs text-slate-300"><a href="tel:9027126704" class="hover:underline">9027126704</a></p>
                             </div>
                         </div>
 
                         <div class="flex items-start space-x-4">
-                            <div class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center text-blue-300 text-lg flex-shrink-0">
-                                <i class="fa-solid fa-envelope"></i>
+                            <div class="bg-indigo-800 p-3 rounded-lg text-amber-400 text-lg">
+                                <i class="fa-solid fa-user-tie"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-sm">Email</h4>
-                                <p class="text-xs text-slate-200 mt-0.5">chandraclasseskurali@gmail.com</p>
+                                <h4 class="font-bold text-sm">Faculty Mentor</h4>
+                                <p class="text-xs text-slate-300">Mr. Chandra (Mathematics Educator)</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Main Inquiry Form -->
-                <div class="md:col-span-7">
-                    <div class="bg-white text-slate-800 rounded-2xl p-8 shadow-2xl">
-                        <h3 class="text-2xl font-bold mb-2">Admission Inquiry Form</h3>
-                        <p class="text-xs text-slate-500 mb-6">Fill in your details below and our faculty will contact you shortly.</p>
-
-                        <form id="main-inquiry-form" class="space-y-4">
-                            <div class="grid sm:grid-cols-2 gap-4">
-                                <div>
-                                    <label class="block text-xs font-bold text-slate-700 mb-1">Student Name</label>
-                                    <input type="text" required placeholder="Full Name" class="w-full px-4 py-2.5 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                                </div>
-                                <div>
-                                    <label class="block text-xs font-bold text-slate-700 mb-1">Phone / WhatsApp Number</label>
-                                    <input type="tel" required placeholder="10-digit number" class="w-full px-4 py-2.5 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                                </div>
-                            </div>
-
-                            <div>
-                                <label class="block text-xs font-bold text-slate-700 mb-1">Select Interested Course</label>
-                                <select required class="w-full px-4 py-2.5 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none bg-white">
-                                    <option value="maths">Special Mathematics Batch</option>
-                                    <option value="class9_10">Class 9th & 10th All Subjects</option>
-                                    <option value="pcb_pcm">Class 11th & 12th Board Science (PCB/PCM)</option>
-                                    <option value="gov_exam">General Competitive Exams</option>
-                                </select>
-                            </div>
-
-                            <div>
-                                <label class="block text-xs font-bold text-slate-700 mb-1">Message or Questions (Optional)</label>
-                                <textarea rows="3" placeholder="Write any query regarding fee structure or timing..." class="w-full px-4 py-2.5 rounded-lg border border-slate-200 text-sm focus:ring-2 focus:ring-blue-500 focus:outline-none"></textarea>
-                            </div>
-
-                            <button type="submit" class="w-full gradient-bg text-white font-bold py-3.5 rounded-xl shadow-lg hover:opacity-95 transition-all text-sm">
-                                Submit Inquiry <i class="fa-solid fa-paper-plane ml-1"></i>
-                            </button>
-                        </form>
-                        <div id="main-form-success" class="hidden p-4 mt-4 bg-emerald-50 text-emerald-800 text-xs rounded-lg border border-emerald-200">
-                            <i class="fa-solid fa-circle-check text-emerald-600 mr-1"></i> Inquiry submitted successfully! We will contact you on your mobile number.
-                        </div>
-                    </div>
+                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 text-center">
+                    <i class="fa-solid fa-circle-info text-amber-400 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">New Batches Starting Soon</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed mb-6">
+                        Fresh batches for LT Grade Mathematics and UPPCS Mains Math Special are commencing. Call us directly on <strong>9027126704</strong> to reserve your seat or visit our center at Kurali, Meerut.
+                    </p>
+                    <a href="tel:9027126704" class="inline-block bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold px-8 py-3 rounded-lg transition shadow-lg">
+                        <i class="fa-solid fa-phone mr-2"></i> Call Now: 9027126704
+                    </a>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <div class="text-white font-extrabold text-xl mb-3 flex items-center space-x-2">
-                        <div class="w-8 h-8 gradient-bg rounded-lg flex items-center justify-center text-xs">CC</div>
-                        <span>CHANDRA CLASSES</span>
-                    </div>
-                    <p class="text-xs leading-relaxed">
-                        Top coaching center in Kurali, Meerut providing quality education for board exams & competitive tests.
-                    </p>
-                </div>
-
-                <div>
-                    <h4 class="text-white font-bold text-sm mb-3">Quick Navigation</h4>
-                    <ul class="space-y-2 text-xs">
-                        <li><a href="#home" class="hover:text-white transition-colors">Home</a></li>
-                        <li><a href="#about" class="hover:text-white transition-colors">About Us</a></li>
-                        <li><a href="#courses" class="hover:text-white transition-colors">Our Batches</a></li>
-                        <li><a href="#pdfs" class="hover:text-white transition-colors">Free PDF Notes</a></li>
-                        <li><a href="#contact" class="hover:text-white transition-colors">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="text-white font-bold text-sm mb-3">Courses</h4>
-                    <ul class="space-y-2 text-xs">
-                        <li><span>Class 9 & 10 Coaching</span></li>
-                        <li><span>Class 11 & 12 Science Stream</span></li>
-                        <li><span>Special Mathematics Batch</span></li>
-                        <li><span>State Competitive Exams</span></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="text-white font-bold text-sm mb-3">Direct Contact</h4>
-                    <p class="text-xs text-slate-300 font-bold mb-2"><i class="fa-solid fa-phone text-emerald-400 mr-1"></i> +91 90271 26704</p>
-                    <p class="text-xs text-slate-400"><i class="fa-solid fa-location-dot text-amber-400 mr-1"></i> Kurali, Meerut (U.P.)</p>
-                </div>
-            </div>
-
-            <div class="border-t border-slate-800 pt-6 text-center text-xs">
-                <p>&copy; 2026 Chandra Classes, Kurali Meerut. All rights reserved.</p>
-            </div>
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 text-xs py-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-2">
+            <p>© CHANDRA CLASSES, Kurali, Meerut. All Rights Reserved.</p>
+            <p class="text-slate-500">Mathematics Mentorship for Board Exams, LT Grade & Competitive Exams.</p>
         </div>
     </footer>
 
-    <div class="fixed bottom-5 right-5 z-50">
-        <button id="tutorial-toggle-btn" class="bg-amber-400 hover:bg-amber-300 text-slate-900 font-extrabold px-4 py-3 rounded-full shadow-2xl flex items-center space-x-2 text-xs border-2 border-slate-900">
-            <i class="fa-solid fa-circle-question text-base"></i>
-            <span>GitHub Par Free Host & PDF Upload Guide</span>
-        </button>
-    </div>
-
-    <!-- Help Modal -->
-    <div id="tutorial-modal" class="fixed inset-0 z-50 bg-slate-900/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
-        <div class="bg-white rounded-2xl max-w-2xl w-full p-6 sm:p-8 max-h-[90vh] overflow-y-auto relative shadow-2xl">
-            <button id="close-modal-btn" class="absolute top-4 right-4 text-slate-400 hover:text-slate-800 text-xl font-bold">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
-
-            <div class="flex items-center space-x-3 mb-4">
-                <div class="w-10 h-10 bg-slate-900 text-white rounded-xl flex items-center justify-center text-xl">
-                    <i class="fa-brands fa-github"></i>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold text-slate-900">Easy Step-by-Step Guide</h3>
-                    <p class="text-xs text-slate-500">Website & PDFs ko Free live karne ka tareeqa:</p>
-                </div>
-            </div>
-
-            <ol class="space-y-4 text-xs text-slate-700 list-decimal list-inside leading-relaxed font-medium">
-                <li class="p-3 bg-slate-50 rounded-lg">
-                    <strong>1. Code Save Karein:</strong> Is poore code ko apne computer/phone me <code>index.html</code> naam se save kar lein.
-                </li>
-                <li class="p-3 bg-slate-50 rounded-lg">
-                    <strong>2. GitHub Account Banayein:</strong> <a href="https://github.com" target="_blank" class="text-blue-600 underline">github.com</a> par jaakar free account banayein.
-                </li>
-                <li class="p-3 bg-slate-50 rounded-lg">
-                    <strong>3. New Repository:</strong> <b>New repository</b> click karein, naam rakhein <i>chandra-classes</i> aur "Create repository" dabayein.
-                </li>
-                <li class="p-3 bg-slate-50 rounded-lg">
-                    <strong>4. index.html Upload Karein:</strong> <b>Upload files</b> par click karke <code>index.html</code> file drag & drop karke upload kar dein.
-                </li>
-                <li class="p-3 bg-amber-50 border border-amber-200 rounded-lg">
-                    <strong>5. PDF Kaise Upload Karein:</strong> Wahan <b>Add file &rarr; Upload files</b> par click karein aur apni PDF (jaise <code>syllabus.pdf</code>) upload kar dein. Website me PDF ka naam exact same hona chahiye!
-                </li>
-                <li class="p-3 bg-emerald-50 border border-emerald-200 rounded-lg">
-                    <strong>6. Website Live Karein:</strong> Repository me <b>Settings &rarr; Pages</b> par jayein. Branch me <b>main</b> chun kar <b>Save</b> karein. 2 minute me aapki website lifetime free live ho jayegi!
-                </li>
-            </ol>
-
-            <div class="mt-6 pt-4 border-t border-slate-100 flex justify-end">
-                <button id="close-modal-bottom" class="bg-slate-900 text-white px-5 py-2.5 rounded-xl font-bold text-xs hover:bg-slate-800">
-                    Samajh Aa Gaya, Close
-                </button>
-            </div>
-        </div>
-    </div>
-
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Mobile navigation toggle
-            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-            const mobileMenu = document.getElementById('mobile-menu');
-
-            if (mobileMenuBtn && mobileMenu) {
-                mobileMenuBtn.addEventListener('click', () => {
-                    mobileMenu.classList.toggle('hidden');
-                });
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            const successBox = document.getElementById('form-success');
+            if (successBox) {
+                successBox.classList.remove('hidden');
             }
-
-            // Real-time Course Search Filter
-            const searchInput = document.getElementById('course-search');
-            const courseCards = document.querySelectorAll('.course-card');
-
-            if (searchInput) {
-                searchInput.addEventListener('input', function(e) {
-                    const query = e.target.value.toLowerCase().trim();
-                    courseCards.forEach(card => {
-                        const title = card.getAttribute('data-title').toLowerCase();
-                        if (title.includes(query)) {
-                            card.style.display = 'flex';
-                        } else {
-                            card.style.display = 'none';
-                        }
-                    });
-                });
-            }
-
-            // Quick Form Submission logic
-            const heroForm = document.getElementById('hero-quick-form');
-            const heroMsg = document.getElementById('hero-form-msg');
-            if (heroForm) {
-                heroForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    heroForm.reset();
-                    heroMsg.classList.remove('hidden');
-                    setTimeout(() => heroMsg.classList.add('hidden'), 5000);
-                });
-            }
-
-            // Main Inquiry Form Submission logic
-            const mainForm = document.getElementById('main-inquiry-form');
-            const mainSuccess = document.getElementById('main-form-success');
-            if (mainForm) {
-                mainForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    mainForm.reset();
-                    mainSuccess.classList.remove('hidden');
-                    setTimeout(() => mainSuccess.classList.add('hidden'), 6000);
-                });
-            }
-
-            // Help Tutorial Modal Toggle logic
-            const tutBtn = document.getElementById('tutorial-toggle-btn');
-            const tutModal = document.getElementById('tutorial-modal');
-            const closeBtn = document.getElementById('close-modal-btn');
-            const closeBottomBtn = document.getElementById('close-modal-bottom');
-
-            function toggleModal() {
-                tutModal.classList.toggle('hidden');
-            }
-
-            if (tutBtn && tutModal) {
-                tutBtn.addEventListener('click', toggleModal);
-                closeBtn.addEventListener('click', toggleModal);
-                closeBottomBtn.addEventListener('click', toggleModal);
-            }
-        });
-
-        // PDF Preview Modal Handler
-        function previewPdf(pdfUrl, title) {
-            const modal = document.getElementById('pdf-modal');
-            const iframe = document.getElementById('pdf-iframe');
-            const modalTitle = document.getElementById('pdf-modal-title');
-            const downloadBtn = document.getElementById('pdf-modal-download');
-
-            modalTitle.textContent = title;
-            iframe.src = pdfUrl;
-            downloadBtn.href = pdfUrl;
-            modal.classList.remove('hidden');
-        }
-
-        function closePdfModal() {
-            const modal = document.getElementById('pdf-modal');
-            const iframe = document.getElementById('pdf-iframe');
-            iframe.src = '';
-            modal.classList.add('hidden');
         }
     </script>
 </body>
