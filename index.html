@@ -83,37 +83,35 @@
                     </div>
                 </div>
 
-                <!-- Quick Inquiry Card -->
+                <!-- Live Formspree Inquiry Card -->
                 <div class="lg:col-span-5 bg-white text-slate-800 p-6 sm:p-8 rounded-2xl shadow-2xl border border-slate-100">
                     <h3 class="text-xl font-bold text-indigo-900 mb-2">Book a Demo / Inquiry</h3>
                     <p class="text-xs text-slate-500 mb-6">Send your details to connect directly with Mr. Chandra.</p>
-                    <form onsubmit="handleFormSubmit(event)" class="space-y-4">
+                    
+                    <form action="https://formspree.io/f/xrpblowd" method="POST" class="space-y-4">
                         <div>
                             <label class="block text-xs font-semibold text-slate-600 mb-1">Student Name *</label>
-                            <input type="text" required placeholder="Enter full name" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-sm">
+                            <input type="text" name="Student Name" required placeholder="Enter full name" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-sm">
                         </div>
                         <div>
                             <label class="block text-xs font-semibold text-slate-600 mb-1">Mobile Number *</label>
-                            <input type="tel" required placeholder="10-digit phone number" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-sm">
+                            <input type="tel" name="Mobile Number" required placeholder="10-digit phone number" class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-sm">
                         </div>
                         <div>
                             <label class="block text-xs font-semibold text-slate-600 mb-1">Select Class / Target Exam *</label>
-                            <select required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-sm">
+                            <select name="Class / Target Exam" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-indigo-500 focus:outline-none text-sm">
                                 <option value="">Select Class</option>
                                 <option value="Class 9th">Class 9th Mathematics</option>
                                 <option value="Class 10th">Class 10th Board Math</option>
                                 <option value="Class 11th">Class 11th Mathematics</option>
                                 <option value="Class 12th">Class 12th Board Math</option>
-                                <option value="LT Grade Math">LT Grade / Competition Special</option>
+                                <option value="LT Grade / UPPCS Mains">LT Grade / Competition Special</option>
                             </select>
                         </div>
-                        <button type="submit" class="w-full bg-indigo-700 hover:bg-indigo-800 text-white font-bold py-3 rounded-lg transition shadow-md">
+                        <button type="submit" class="w-full bg-indigo-700 hover:bg-indigo-800 text-white font-bold py-3 rounded-lg transition shadow-md flex items-center justify-center">
                             Submit Inquiry <i class="fa-solid fa-paper-plane ml-2"></i>
                         </button>
                     </form>
-                    <div id="form-success" class="hidden mt-4 p-3 bg-emerald-50 text-emerald-700 border border-emerald-200 rounded-lg text-xs font-medium text-center">
-                        <i class="fa-solid fa-circle-check mr-1"></i> Inquiry submitted successfully! We will contact you shortly.
-                    </div>
                 </div>
             </div>
         </div>
@@ -384,14 +382,5 @@
         </div>
     </footer>
 
-    <script>
-        function handleFormSubmit(e) {
-            e.preventDefault();
-            const successBox = document.getElementById('form-success');
-            if (successBox) {
-                successBox.classList.remove('hidden');
-            }
-        }
-    </script>
 </body>
 </html>
