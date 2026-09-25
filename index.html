@@ -3,140 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHANDRA CLASSES | Mathematics Institute by Mr. Chandra (Kurali, Meerut)</title>
+    <title>CHANDRA CLASSES | Online & Offline Maths Specialist (Class 9th-12th)</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .hero-bg {
-            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #1e293b 100%);
+        .fun-font { font-family: 'Fredoka', sans-serif; }
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #0284c7 100%);
         }
-        .royal-gold-text {
-            background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .card-pop {
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
         }
-        .card-shadow {
-            box-shadow: 0 10px 30px -5px rgba(15, 23, 42, 0.08);
+        .card-pop:hover {
+            transform: translateY(-8px) scale(1.02);
         }
-        .gold-shadow {
-            box-shadow: 0 8px 25px -5px rgba(217, 119, 6, 0.3);
+        .bounce-soft {
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-6px); }
         }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+<body class="bg-blue-50/50 text-slate-800 flex flex-col min-h-screen">
 
     <!-- Top Announcement Bar -->
-    <div class="bg-amber-500 text-slate-950 text-xs font-bold py-2 px-4 shadow-sm">
-        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-            <div class="flex items-center space-x-3">
-                <span><i class="fa-solid fa-location-dot mr-1"></i> Kurali, Meerut (U.P.)</span>
-                <span>•</span>
-                <span><i class="fa-solid fa-phone mr-1"></i> <a href="tel:9027126704" class="hover:underline">9027126704</a></span>
-            </div>
+    <div class="bg-amber-400 text-slate-900 text-xs sm:text-sm font-bold py-2.5 px-4 shadow-sm">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center sm:text-left">
             <div class="flex items-center space-x-2">
-                <span class="bg-slate-950 text-amber-400 text-[10px] uppercase font-black px-2.5 py-0.5 rounded-full">New Admission 2026-27</span>
-                <span>Class 9th–12th | LT Grade | UPPCS Mains</span>
+                <span class="bg-slate-900 text-amber-300 px-2.5 py-0.5 rounded-full text-[11px] font-black uppercase">🎯 Admissions Open 2026-27</span>
+                <span class="fun-font text-slate-950 font-bold">Online & Offline Batches | Class 9th to 12th Maths (CBSE & UP Board)</span>
+            </div>
+            <div class="flex items-center space-x-3 text-xs font-black">
+                <a href="tel:9027126704" class="bg-slate-900 hover:bg-slate-800 text-white px-3 py-1 rounded-lg transition"><i class="fa-solid fa-phone text-amber-400 mr-1"></i> 9027126704</a>
+                <span>📍 Kurali, Meerut & Online</span>
             </div>
         </div>
     </div>
 
     <!-- Navigation Bar -->
-    <nav class="bg-white border-b border-slate-200 sticky top-0 z-40 shadow-sm">
+    <nav class="bg-white border-b-2 border-blue-100 sticky top-0 z-40 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
                 <div class="flex items-center space-x-3">
-                    <div class="bg-slate-900 text-amber-400 p-3 rounded-2xl shadow-md">
-                        <i class="fa-solid fa-square-root-variable text-2xl font-black"></i>
+                    <div class="bg-blue-600 text-white p-3.5 rounded-2xl shadow-lg shadow-blue-500/30">
+                        <i class="fa-solid fa-calculator text-2xl"></i>
                     </div>
                     <div>
-                        <h1 class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">CHANDRA <span class="text-amber-600">CLASSES</span></h1>
-                        <p class="text-[10px] text-indigo-700 font-bold tracking-widest uppercase">Premier Mathematics Academy</p>
+                        <h1 class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight fun-font">CHANDRA <span class="text-blue-600">CLASSES</span></h1>
+                        <p class="text-[11px] text-amber-600 font-bold tracking-widest uppercase">Class 9th to 12th Maths Academy</p>
                     </div>
                 </div>
                 
-                <div class="hidden md:flex items-center space-x-7 text-xs uppercase tracking-wider font-bold text-slate-700">
-                    <a href="#about-mentor" class="hover:text-amber-600 transition">Mentor</a>
-                    <a href="#batches" class="hover:text-amber-600 transition">Batches</a>
-                    <a href="#pdfs" class="hover:text-amber-600 transition">Drive PDFs</a>
-                    <a href="#faqs" class="hover:text-amber-600 transition">FAQs</a>
-                    <a href="#contact" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-black px-5 py-2.5 rounded-xl transition gold-shadow">Inquire Now</a>
+                <div class="hidden md:flex items-center space-x-6 text-xs uppercase tracking-wider font-extrabold text-slate-700">
+                    <a href="#about-teacher" class="hover:text-blue-600 transition">About Sachin Sir</a>
+                    <a href="#classes" class="hover:text-blue-600 transition">Our Classes</a>
+                    <a href="#pdfs" class="hover:text-blue-600 transition">Free Drive PDFs</a>
+                    <a href="#testimonials" class="hover:text-blue-600 transition">Student Feedback</a>
+                    <a href="#faqs" class="hover:text-blue-600 transition">FAQs</a>
+                    <a href="#demo-form" class="bg-amber-400 hover:bg-amber-300 text-slate-950 font-black px-5 py-2.5 rounded-xl transition shadow-md shadow-amber-400/40 border border-amber-500/30">Book Free Demo 🚀</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-bg text-white py-16 lg:py-20 relative overflow-hidden">
+    <section class="hero-gradient text-white py-12 lg:py-16 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid lg:grid-cols-12 gap-12 items-center">
+            <div class="grid lg:grid-cols-12 gap-10 items-center">
                 
                 <!-- Left Details -->
-                <div class="lg:col-span-7 space-y-6">
-                    <span class="inline-flex items-center bg-indigo-950/80 text-amber-300 border border-amber-500/30 text-xs font-bold px-4 py-1.5 rounded-full">
-                        <i class="fa-solid fa-award mr-2 text-amber-400"></i> Specialist Educator: Mr. Chandra
-                    </span>
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center bg-white/10 backdrop-blur-md text-amber-300 border border-white/20 text-xs font-bold px-4 py-2 rounded-full gap-2">
+                        <span><i class="fa-solid fa-laptop-house text-amber-300"></i> Online Classes</span>
+                        <span>|</span>
+                        <span><i class="fa-solid fa-building-columns text-amber-300"></i> Offline Center (Kurali, Meerut)</span>
+                    </div>
                     
-                    <h2 class="text-3xl sm:text-5xl font-black leading-tight tracking-tight">
-                        Build Solid Concepts in <span class="royal-gold-text">Mathematics</span>
+                    <h2 class="text-3xl sm:text-5xl font-black leading-tight tracking-tight fun-font">
+                        Maths Ko Banao Super Easy & Score <span class="text-amber-300 underline decoration-amber-400 decoration-wavy">100/100!</span> 📐✨
                     </h2>
                     
-                    <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl">
-                        Specialized offline coaching for <strong class="text-amber-400">Class 9th, 10th, 11th & 12th Board Exams</strong>, <strong class="text-amber-400">LT Grade Math</strong>, and <strong class="text-amber-400">UPPCS Mains Mathematics</strong> at Kurali, Meerut.
+                    <p class="text-blue-100 text-sm sm:text-base leading-relaxed max-w-2xl">
+                        Class 9th, 10th, 11th aur 12th ke CBSE aur UP Board students ke liye <strong>Sachin Sir (B.Sc., B.Ed.)</strong> ke saath interactive Maths learning. Online Live Classes & Offline Classroom Coaching!
                     </p>
 
-                    <div class="flex flex-wrap gap-4 pt-2">
-                        <a href="#pdfs" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-black px-6 py-3.5 rounded-xl transition gold-shadow flex items-center text-xs uppercase tracking-wider">
-                            Free Class PDFs <i class="fa-solid fa-folder-open ml-2"></i>
+                    <!-- Feature Badges -->
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-3 pt-2">
+                        <span class="bg-white/10 text-white text-xs font-bold px-3 py-1.5 rounded-lg border border-white/10"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5"></i>Live & Offline Batches</span>
+                        <span class="bg-white/10 text-white text-xs font-bold px-3 py-1.5 rounded-lg border border-white/10"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5"></i>NCERT & Board PYQs</span>
+                        <span class="bg-white/10 text-white text-xs font-bold px-3 py-1.5 rounded-lg border border-white/10"><i class="fa-solid fa-circle-check text-emerald-400 mr-1.5"></i>Weekly Test Series</span>
+                    </div>
+
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#pdfs" class="bg-amber-400 hover:bg-amber-300 text-slate-950 font-black px-6 py-3.5 rounded-2xl transition shadow-lg shadow-amber-400/30 flex items-center text-xs uppercase tracking-wider fun-font">
+                            Free Study PDFs <i class="fa-solid fa-folder-open ml-2 text-sm"></i>
                         </a>
-                        <a href="https://wa.me/919027126704?text=Hello%20Mr.%20Chandra,%20I%20want%20to%20inquire%20about%20Maths%20batches." target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-6 py-3.5 rounded-xl transition flex items-center text-xs uppercase tracking-wider shadow-lg shadow-emerald-950/30">
-                            <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Chat on WhatsApp
+                        <a href="https://wa.me/919027126704?text=Hello%20Sachin%20Sir,%20I%20want%20to%20join%20Maths%20Batch." target="_blank" class="bg-emerald-500 hover:bg-emerald-400 text-white font-bold px-6 py-3.5 rounded-2xl transition flex items-center text-xs uppercase tracking-wider shadow-lg shadow-emerald-600/30 fun-font">
+                            <i class="fa-brands fa-whatsapp text-lg mr-2"></i> WhatsApp Direct
                         </a>
                     </div>
                 </div>
 
-                <!-- WhatsApp Direct Form -->
-                <div class="lg:col-span-5 bg-white text-slate-900 p-7 sm:p-8 rounded-3xl shadow-2xl border border-slate-200">
-                    <div class="flex items-center space-x-3 mb-5">
-                        <div class="bg-amber-500/10 text-amber-600 p-3 rounded-2xl border border-amber-500/20">
-                            <i class="fa-solid fa-paper-plane text-xl"></i>
+                <!-- Right Student Interactive Demo & Query Form -->
+                <div id="demo-form" class="lg:col-span-5 bg-white text-slate-900 p-7 sm:p-8 rounded-3xl shadow-2xl border-4 border-amber-300 relative">
+                    <div class="absolute -top-4 right-6 bg-amber-400 text-slate-900 text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-md bounce-soft">
+                        ⚡ 3 Days Free Demo!
+                    </div>
+
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="bg-blue-100 text-blue-600 p-3 rounded-2xl">
+                            <i class="fa-solid fa-user-graduate text-xl"></i>
                         </div>
                         <div>
-                            <h3 class="text-xl font-bold text-slate-900">Book Demo / Inquiry</h3>
-                            <p class="text-xs text-slate-500">Direct message to Mr. Chandra</p>
+                            <h3 class="text-xl font-black text-slate-900 fun-font">Demo / Query Form</h3>
+                            <p class="text-xs text-slate-500 font-medium">Direct message to Sachin Sir</p>
                         </div>
                     </div>
                     
-                    <form onsubmit="sendWhatsAppQuery(event)" class="space-y-4">
+                    <form onsubmit="sendWhatsAppQuery(event)" class="space-y-3.5">
                         <div>
                             <label class="block text-xs font-bold text-slate-700 mb-1 uppercase tracking-wider">Student Name *</label>
-                            <input type="text" id="studentName" required placeholder="Enter full name" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus:outline-none text-sm transition">
+                            <input type="text" id="studentName" required placeholder="Aapka Naam" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none text-sm font-medium transition">
+                        </div>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1 uppercase tracking-wider">Class *</label>
+                                <select id="studentClass" required class="w-full px-3 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:border-blue-500 focus:outline-none text-xs font-bold transition">
+                                    <option value="Class 9th">Class 9th</option>
+                                    <option value="Class 10th">Class 10th</option>
+                                    <option value="Class 11th">Class 11th</option>
+                                    <option value="Class 12th">Class 12th</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1 uppercase tracking-wider">Mode *</label>
+                                <select id="studentMode" required class="w-full px-3 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:border-blue-500 focus:outline-none text-xs font-bold transition">
+                                    <option value="Online Class">Online Class</option>
+                                    <option value="Offline Class">Offline Class</option>
+                                </select>
+                            </div>
                         </div>
                         <div>
                             <label class="block text-xs font-bold text-slate-700 mb-1 uppercase tracking-wider">Mobile Number *</label>
-                            <input type="tel" id="studentPhone" required placeholder="10-digit mobile number" class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus:outline-none text-sm transition">
+                            <input type="tel" id="studentPhone" required placeholder="10-digit Phone Number" class="w-full px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none text-sm font-medium transition">
                         </div>
                         <div>
-                            <label class="block text-xs font-bold text-slate-700 mb-1 uppercase tracking-wider">Target Class *</label>
-                            <select id="studentClass" required class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus:outline-none text-sm transition">
-                                <option value="">Select Class</option>
-                                <option value="Class 9th">Class 9th Mathematics</option>
-                                <option value="Class 10th">Class 10th Board Math</option>
-                                <option value="Class 11th">Class 11th Mathematics</option>
-                                <option value="Class 12th">Class 12th Board Math</option>
-                                <option value="LT Grade / UPPCS Mains">LT Grade / Competition Special</option>
-                            </select>
+                            <label class="block text-xs font-bold text-slate-700 mb-1 uppercase tracking-wider">Your Message / Query *</label>
+                            <textarea id="studentMsg" rows="2" required placeholder="Apna koi bhi question ya requirement likhein..." class="w-full px-4 py-2 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 focus:outline-none text-xs font-medium transition"></textarea>
                         </div>
-                        <div>
-                            <label class="block text-xs font-bold text-slate-700 mb-1 uppercase tracking-wider">Message / Doubt (Optional)</label>
-                            <textarea id="studentMsg" rows="3" maxlength="500" placeholder="Type message here..." class="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 focus:border-amber-500 focus:ring-1 focus:ring-amber-500 focus:outline-none text-sm resize-none transition"></textarea>
-                        </div>
-                        <button type="submit" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-black py-3.5 rounded-xl transition shadow-lg shadow-emerald-600/30 uppercase tracking-wider text-xs flex items-center justify-center">
-                            Send Inquiry on WhatsApp <i class="fa-brands fa-whatsapp text-base ml-2"></i>
+                        <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-400 text-white font-black py-3 rounded-xl transition shadow-lg shadow-emerald-500/30 uppercase tracking-wider text-xs flex items-center justify-center fun-font">
+                            Send Inquiry On WhatsApp <i class="fa-brands fa-whatsapp text-lg ml-2"></i>
                         </button>
                     </form>
                 </div>
@@ -145,291 +168,286 @@
         </div>
     </section>
 
-    <!-- Batch Interactive Selector Section -->
-    <section id="batches" class="py-16 bg-white border-b border-slate-200">
-        <div class="max-w-5xl mx-auto px-4 text-center">
-            <span class="text-amber-600 font-bold uppercase tracking-widest text-xs">Batch Information</span>
-            <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 mt-1">Select Class to View Details</h2>
-            <p class="text-slate-500 text-xs sm:text-sm mt-1 mb-8">Apni class select karke batch timings aur test features dekhein:</p>
-
-            <div class="bg-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-200 max-w-2xl mx-auto text-left card-shadow">
-                <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Select Class:</label>
-                <select id="classSelector" onchange="updateBatchInfo()" class="w-full px-4 py-3.5 rounded-xl bg-white text-slate-900 border border-slate-300 focus:border-amber-500 focus:outline-none text-sm mb-6">
-                    <option value="9">Class 9th Mathematics</option>
-                    <option value="10">Class 10th Board Mathematics</option>
-                    <option value="11">Class 11th Mathematics</option>
-                    <option value="12">Class 12th Board Mathematics</option>
-                    <option value="lt">LT Grade / UPPCS Mains Math</option>
-                </select>
-
-                <div id="batchInfoBox" class="bg-white p-5 rounded-2xl border border-slate-200 space-y-3 text-sm">
-                    <div class="flex justify-between items-center border-b border-slate-100 pb-2.5">
-                        <span class="text-slate-500">Class Duration:</span>
-                        <span id="batchDuration" class="font-bold text-amber-600">1 Hour Daily (School Foundation)</span>
-                    </div>
-                    <div class="flex justify-between items-center border-b border-slate-100 pb-2.5">
-                        <span class="text-slate-500">Test Series:</span>
-                        <span id="batchTests" class="font-bold text-emerald-600">NCERT + Weekly Chapter Tests</span>
-                    </div>
-                    <div class="flex justify-between items-center border-b border-slate-100 pb-2.5">
-                        <span class="text-slate-500">Study Material:</span>
-                        <span id="batchMaterial" class="font-bold text-slate-800">Free Formula Sheets & Drive PDFs</span>
-                    </div>
-                    <div class="flex justify-between items-center pt-1">
-                        <span class="text-slate-500">Batch Mode:</span>
-                        <span class="font-bold text-indigo-700">Offline Classroom (Kurali, Meerut)</span>
+    <!-- About Teacher Section (Sachin Sir) -->
+    <section id="about-teacher" class="py-16 bg-white border-b border-blue-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-3xl p-8 sm:p-12 text-white shadow-xl flex flex-col md:flex-row items-center gap-8">
+                <div class="w-32 h-32 sm:w-40 sm:h-40 bg-white/10 rounded-full border-4 border-amber-300 flex items-center justify-center flex-shrink-0 shadow-lg">
+                    <i class="fa-solid fa-chalkboard-user text-6xl text-amber-300"></i>
+                </div>
+                <div class="space-y-3 text-center md:text-left">
+                    <span class="bg-amber-400 text-slate-900 text-xs font-black px-3 py-1 rounded-full uppercase">Meet Your Educator</span>
+                    <h2 class="text-3xl sm:text-4xl font-black fun-font">Sachin Sir <span class="text-amber-300 text-xl font-bold">(B.Sc., B.Ed.)</span></h2>
+                    <p class="text-blue-100 text-xs sm:text-sm leading-relaxed max-w-2xl">
+                        Aapke Maths Dar ko khatam karne aur Board Exams me Top Score karwane ke liye committed. Sachin Sir ne hundreds of UP Board & CBSE Board students ko Class 9th se 12th tak Maths ke mushkil formulas aur theorems ko easy tricks se sikhaya hai.
+                    </p>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-3 pt-2">
+                        <span class="bg-white/10 px-3 py-1 rounded-lg text-xs font-semibold"><i class="fa-solid fa-certificate text-amber-300 mr-1.5"></i> B.Sc., B.Ed. Qualified</span>
+                        <span class="bg-white/10 px-3 py-1 rounded-lg text-xs font-semibold"><i class="fa-solid fa-star text-amber-300 mr-1.5"></i> Board Exam Specialist</span>
+                        <span class="bg-white/10 px-3 py-1 rounded-lg text-xs font-semibold"><i class="fa-solid fa-users text-amber-300 mr-1.5"></i> 100% Personal Guidance</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Faculty / Mentor Profile -->
-    <section id="about-mentor" class="py-16 bg-slate-50">
+    <!-- Classes Section (9th to 12th) -->
+    <section id="classes" class="py-16 bg-blue-50/40">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-12">
-                <span class="text-amber-600 font-bold uppercase tracking-widest text-xs">Expert Mentorship</span>
-                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-1">Guided by Mr. Chandra</h2>
-                <div class="w-16 h-1 bg-amber-500 mx-auto mt-3 rounded-full"></div>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-3xl border border-slate-200 card-shadow hover:border-amber-400 transition">
-                    <div class="w-12 h-12 bg-amber-500/10 text-amber-600 rounded-2xl flex items-center justify-center text-xl mb-5 font-black border border-amber-500/20">
-                        <i class="fa-solid fa-book-open"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Core Subject Expertise</h3>
-                    <ul class="text-xs text-slate-600 space-y-2.5 font-medium">
-                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-amber-500 mr-2"></i> Board Exam Preparation (10th & 12th)</li>
-                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-amber-500 mr-2"></i> Algebra, Trigonometry & Matrices</li>
-                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-amber-500 mr-2"></i> Differential & Integral Calculus</li>
-                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-amber-500 mr-2"></i> LT Grade & Competitive Mathematics</li>
-                    </ul>
-                </div>
-
-                <div class="bg-white p-8 rounded-3xl border border-slate-200 card-shadow hover:border-amber-400 transition">
-                    <div class="w-12 h-12 bg-indigo-500/10 text-indigo-600 rounded-2xl flex items-center justify-center text-xl mb-5 font-black border border-indigo-500/20">
-                        <i class="fa-solid fa-chalkboard-user"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Teaching Methodology</h3>
-                    <ul class="text-xs text-slate-600 space-y-2.5 font-medium">
-                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-indigo-600 mr-2"></i> Step-by-step NCERT solution proofs</li>
-                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-indigo-600 mr-2"></i> Board answer presentation skills</li>
-                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-indigo-600 mr-2"></i> Formula memory tricks & practice sheets</li>
-                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-indigo-600 mr-2"></i> Personal doubt clearance sessions</li>
-                    </ul>
-                </div>
-
-                <div class="bg-white p-8 rounded-3xl border border-slate-200 card-shadow hover:border-amber-400 transition">
-                    <div class="w-12 h-12 bg-emerald-500/10 text-emerald-600 rounded-2xl flex items-center justify-center text-xl mb-5 font-black border border-emerald-500/20">
-                        <i class="fa-solid fa-users"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-slate-900 mb-3">Classroom Features</h3>
-                    <ul class="text-xs text-slate-600 space-y-2.5 font-medium">
-                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-600 mr-2"></i> Small batch sizes for better focus</li>
-                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-600 mr-2"></i> Daily homework & weekly unit tests</li>
-                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-600 mr-2"></i> Regular performance tracking</li>
-                        <li class="flex items-center"><i class="fa-solid fa-circle-check text-emerald-600 mr-2"></i> Offline classes at Kurali, Meerut</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Free Study Material Section (Drive Folders) -->
-    <section id="pdfs" class="py-16 bg-white border-t border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-12">
-                <span class="text-amber-600 font-bold uppercase tracking-widest text-xs">Free Study Material</span>
-                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-1">Class-wise Google Drive Folders</h2>
-                <p class="text-slate-500 text-xs sm:text-sm mt-1">Apni Class ke button par click karke Google Drive se PDFs download karein:</p>
+                <span class="text-blue-600 font-extrabold uppercase tracking-widest text-xs bg-blue-100 px-3 py-1 rounded-full">Course Offerings</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2 fun-font">Class 9th to 12th Maths Batches</h2>
+                <p class="text-slate-500 text-xs sm:text-sm mt-1">Both Online Live Interactive Batches & Offline Classroom Prep:</p>
             </div>
 
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- 9th -->
-                <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200 hover:border-emerald-500 transition flex flex-col justify-between card-shadow">
+                <!-- Class 9th -->
+                <div class="bg-white p-6 rounded-3xl border-2 border-emerald-200 shadow-md card-pop flex flex-col justify-between">
                     <div>
-                        <div class="w-12 h-12 bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center font-black text-lg mb-4">9th</div>
-                        <h3 class="font-bold text-slate-900 text-lg mb-1">Class 9th Math</h3>
-                        <p class="text-xs text-slate-500 mb-6">NCERT Notes, Formula Sheets & Practice PDFs.</p>
+                        <div class="w-12 h-12 bg-emerald-500 text-white rounded-2xl flex items-center justify-center font-black text-xl mb-4 fun-font shadow-md">
+                            09
+                        </div>
+                        <h3 class="font-black text-slate-900 text-lg fun-font">Class 9th Maths</h3>
+                        <span class="inline-block bg-emerald-100 text-emerald-800 text-[10px] font-bold px-2.5 py-0.5 rounded-md mb-3">UP Board & CBSE</span>
+                        <ul class="text-xs text-slate-600 space-y-2 mb-6 font-medium">
+                            <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Strong Foundation & Concepts</li>
+                            <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Live / Offline Classes</li>
+                            <li><i class="fa-solid fa-check text-emerald-600 mr-1.5"></i> Daily Worksheets & HW Check</li>
+                        </ul>
                     </div>
-                    <a href="https://drive.google.com/drive/u/0/folders/13BaKT3Xj-HG3pkNXcTZ__xV8jFpyD4oD" target="_blank" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl text-xs transition flex items-center justify-center shadow-md">
-                        <i class="fa-solid fa-folder-open mr-2"></i> Open 9th Drive Folder
+                    <a href="#demo-form" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-2.5 rounded-xl text-xs transition text-center shadow-md fun-font">
+                        Join 9th Batch 🚀
                     </a>
                 </div>
 
-                <!-- 10th -->
-                <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200 hover:border-blue-500 transition flex flex-col justify-between card-shadow">
+                <!-- Class 10th -->
+                <div class="bg-white p-6 rounded-3xl border-2 border-blue-200 shadow-md card-pop flex flex-col justify-between">
                     <div>
-                        <div class="w-12 h-12 bg-blue-100 text-blue-700 rounded-2xl flex items-center justify-center font-black text-lg mb-4">10th</div>
-                        <h3 class="font-bold text-slate-900 text-lg mb-1">Class 10th Board</h3>
-                        <p class="text-xs text-slate-500 mb-6">Board Sample Papers, Important Theorems & Solved PDFs.</p>
+                        <div class="w-12 h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center font-black text-xl mb-4 fun-font shadow-md">
+                            10
+                        </div>
+                        <h3 class="font-black text-slate-900 text-lg fun-font">Class 10th Board Target</h3>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-[10px] font-bold px-2.5 py-0.5 rounded-md mb-3">Target: 100/100 Marks</span>
+                        <ul class="text-xs text-slate-600 space-y-2 mb-6 font-medium">
+                            <li><i class="fa-solid fa-check text-blue-600 mr-1.5"></i> Complete NCERT & Proofs</li>
+                            <li><i class="fa-solid fa-check text-blue-600 mr-1.5"></i> 10 Years Board PYQs</li>
+                            <li><i class="fa-solid fa-check text-blue-600 mr-1.5"></i> Special Revision Tests</li>
+                        </ul>
                     </div>
-                    <a href="https://drive.google.com/drive/u/0/folders/1Pz3IKDK-g_I8u8lm4Kn4xN3-cFU9KHKI" target="_blank" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 rounded-xl text-xs transition flex items-center justify-center shadow-md">
-                        <i class="fa-solid fa-folder-open mr-2"></i> Open 10th Drive Folder
+                    <a href="#demo-form" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-2.5 rounded-xl text-xs transition text-center shadow-md fun-font">
+                        Join 10th Board Batch 🎯
                     </a>
                 </div>
 
-                <!-- 11th -->
-                <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200 hover:border-amber-500 transition flex flex-col justify-between card-shadow">
+                <!-- Class 11th -->
+                <div class="bg-white p-6 rounded-3xl border-2 border-amber-200 shadow-md card-pop flex flex-col justify-between">
                     <div>
-                        <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-2xl flex items-center justify-center font-black text-lg mb-4">11th</div>
-                        <h3 class="font-bold text-slate-900 text-lg mb-1">Class 11th Math</h3>
-                        <p class="text-xs text-slate-500 mb-6">Algebra, Trigonometry & Calculus Concept PDFs.</p>
+                        <div class="w-12 h-12 bg-amber-500 text-slate-950 rounded-2xl flex items-center justify-center font-black text-xl mb-4 fun-font shadow-md">
+                            11
+                        </div>
+                        <h3 class="font-black text-slate-900 text-lg fun-font">Class 11th Core Maths</h3>
+                        <span class="inline-block bg-amber-100 text-amber-800 text-[10px] font-bold px-2.5 py-0.5 rounded-md mb-3">UP Board & CBSE</span>
+                        <ul class="text-xs text-slate-600 space-y-2 mb-6 font-medium">
+                            <li><i class="fa-solid fa-check text-amber-600 mr-1.5"></i> Trigonometry & Algebra</li>
+                            <li><i class="fa-solid fa-check text-amber-600 mr-1.5"></i> Calculus Fundamentals</li>
+                            <li><i class="fa-solid fa-check text-amber-600 mr-1.5"></i> Formula Short Tricks</li>
+                        </ul>
                     </div>
-                    <a href="https://drive.google.com/drive/u/0/folders/1YWEdsA1wlyGmPXNG16bRdmu3g1JmCqjJ" target="_blank" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold py-3 rounded-xl text-xs transition flex items-center justify-center gold-shadow">
-                        <i class="fa-solid fa-folder-open mr-2"></i> Open 11th Drive Folder
+                    <a href="#demo-form" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold py-2.5 rounded-xl text-xs transition text-center shadow-md fun-font">
+                        Join 11th Batch ⚡
                     </a>
                 </div>
 
-                <!-- 12th -->
-                <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200 hover:border-indigo-500 transition flex flex-col justify-between card-shadow">
+                <!-- Class 12th -->
+                <div class="bg-white p-6 rounded-3xl border-2 border-purple-200 shadow-md card-pop flex flex-col justify-between">
                     <div>
-                        <div class="w-12 h-12 bg-indigo-100 text-indigo-700 rounded-2xl flex items-center justify-center font-black text-lg mb-4">12th</div>
-                        <h3 class="font-bold text-slate-900 text-lg mb-1">Class 12th Board</h3>
-                        <p class="text-xs text-slate-500 mb-6">Matrices, Calculus, Vectors & Board Practice Question Sets.</p>
+                        <div class="w-12 h-12 bg-purple-600 text-white rounded-2xl flex items-center justify-center font-black text-xl mb-4 fun-font shadow-md">
+                            12
+                        </div>
+                        <h3 class="font-black text-slate-900 text-lg fun-font">Class 12th Board Target</h3>
+                        <span class="inline-block bg-purple-100 text-purple-800 text-[10px] font-bold px-2.5 py-0.5 rounded-md mb-3">Target: Board Topper</span>
+                        <ul class="text-xs text-slate-600 space-y-2 mb-6 font-medium">
+                            <li><i class="fa-solid fa-check text-purple-600 mr-1.5"></i> Matrices & Integration Master</li>
+                            <li><i class="fa-solid fa-check text-purple-600 mr-1.5"></i> 3D Geometry & Vectors</li>
+                            <li><i class="fa-solid fa-check text-purple-600 mr-1.5"></i> Full Mock Board Exams</li>
+                        </ul>
                     </div>
-                    <a href="https://drive.google.com/drive/u/0/folders/1GRO1Wr03XGmpASmJBF5eLx_V4hDelBlC" target="_blank" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-bold py-3 rounded-xl text-xs transition flex items-center justify-center shadow-md">
-                        <i class="fa-solid fa-folder-open mr-2"></i> Open 12th Drive Folder
+                    <a href="#demo-form" class="w-full bg-purple-600 hover:bg-purple-500 text-white font-bold py-2.5 rounded-xl text-xs transition text-center shadow-md fun-font">
+                        Join 12th Board Batch 🏆
                     </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Study Material Section (Drive Folders - SINGLE DEDICATED SECTION) -->
+    <section id="pdfs" class="py-16 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-amber-400 font-bold uppercase tracking-widest text-xs">Free Google Drive Resources</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-white mt-1 fun-font">Class-Wise Study Material & PDFs</h2>
+                <p class="text-slate-400 text-xs sm:text-sm mt-1">Download Chapter Notes, NCERT Solved Examples & Sample Papers directly:</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <a href="https://drive.google.com/drive/u/0/folders/13BaKT3Xj-HG3pkNXcTZ__xV8jFpyD4oD" target="_blank" class="bg-slate-800 p-6 rounded-3xl border border-slate-700 hover:border-emerald-400 transition text-center card-pop">
+                    <div class="w-14 h-14 bg-emerald-500/20 text-emerald-400 rounded-2xl flex items-center justify-center font-black text-xl mx-auto mb-4">9th</div>
+                    <h3 class="font-bold text-lg mb-1">Class 9th Drive Folder</h3>
+                    <p class="text-xs text-slate-400 mb-4">NCERT Formulas & Basic Practice Sheets</p>
+                    <span class="text-xs font-bold text-emerald-400 underline">Open Drive <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i></span>
+                </a>
+
+                <a href="https://drive.google.com/drive/u/0/folders/1Pz3IKDK-g_I8u8lm4Kn4xN3-cFU9KHKI" target="_blank" class="bg-slate-800 p-6 rounded-3xl border border-slate-700 hover:border-blue-400 transition text-center card-pop">
+                    <div class="w-14 h-14 bg-blue-500/20 text-blue-400 rounded-2xl flex items-center justify-center font-black text-xl mx-auto mb-4">10th</div>
+                    <h3 class="font-bold text-lg mb-1">Class 10th Drive Folder</h3>
+                    <p class="text-xs text-slate-400 mb-4">10 Years Board Papers & Solved Notes</p>
+                    <span class="text-xs font-bold text-blue-400 underline">Open Drive <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i></span>
+                </a>
+
+                <a href="https://drive.google.com/drive/u/0/folders/1YWEdsA1wlyGmPXNG16bRdmu3g1JmCqjJ" target="_blank" class="bg-slate-800 p-6 rounded-3xl border border-slate-700 hover:border-amber-400 transition text-center card-pop">
+                    <div class="w-14 h-14 bg-amber-500/20 text-amber-400 rounded-2xl flex items-center justify-center font-black text-xl mx-auto mb-4">11th</div>
+                    <h3 class="font-bold text-lg mb-1">Class 11th Drive Folder</h3>
+                    <p class="text-xs text-slate-400 mb-4">Trigonometry & Calculus Concept PDFs</p>
+                    <span class="text-xs font-bold text-amber-400 underline">Open Drive <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i></span>
+                </a>
+
+                <a href="https://drive.google.com/drive/u/0/folders/1GRO1Wr03XGmpASmJBF5eLx_V4hDelBlC" target="_blank" class="bg-slate-800 p-6 rounded-3xl border border-slate-700 hover:border-purple-400 transition text-center card-pop">
+                    <div class="w-14 h-14 bg-purple-500/20 text-purple-400 rounded-2xl flex items-center justify-center font-black text-xl mx-auto mb-4">12th</div>
+                    <h3 class="font-bold text-lg mb-1">Class 12th Drive Folder</h3>
+                    <p class="text-xs text-slate-400 mb-4">Integration, Matrices & Board Practice Sets</p>
+                    <span class="text-xs font-bold text-purple-400 underline">Open Drive <i class="fa-solid fa-arrow-up-right-from-square ml-1"></i></span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Reviews / Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-blue-600 font-extrabold uppercase tracking-widest text-xs bg-blue-100 px-3 py-1 rounded-full">Student Voice</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-2 fun-font">What Our Students Say</h2>
+                <p class="text-slate-500 text-xs sm:text-sm mt-1">Feedback from Chandra Classes Board Students:</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200 relative">
+                    <div class="text-amber-400 text-sm mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed italic mb-4">
+                        "Sachin Sir ke shortcut formulas aur integration ki live classes se mera Class 12th board me Maths confidence 100% badh gaya. Highly recommended!"
+                    </p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">A</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Aman Sharma</h4>
+                            <p class="text-[11px] text-slate-500">Class 12th (CBSE Board)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200 relative">
+                    <div class="text-amber-400 text-sm mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed italic mb-4">
+                        "UP Board ke NCERT examples aur Theorems ko Sachin Sir local language me itna easy bana dete hain ki 10th me mere 95/100 marks aaye!"
+                    </p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-emerald-600 text-white rounded-full flex items-center justify-center font-bold text-sm">R</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Ritu Verma</h4>
+                            <p class="text-[11px] text-slate-500">Class 10th (UP Board)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200 relative">
+                    <div class="text-amber-400 text-sm mb-3">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-xs text-slate-600 leading-relaxed italic mb-4">
+                        "Online live class me doubt instantly clear hote hain aur Drive folder se pyqs aur sample paper easily mil jate hain."
+                    </p>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-purple-600 text-white rounded-full flex items-center justify-center font-bold text-sm">V</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Vikas Kumar</h4>
+                            <p class="text-[11px] text-slate-500">Class 11th (Online Student)</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FAQ Accordion Section -->
-    <section id="faqs" class="py-16 bg-slate-50">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="faqs" class="py-16 bg-blue-50/30">
+        <div class="max-w-4xl mx-auto px-4">
             <div class="text-center mb-12">
-                <span class="text-amber-600 font-bold uppercase tracking-widest text-xs">Help & FAQs</span>
-                <h2 class="text-3xl font-black text-slate-900 mt-1">Frequently Asked Questions</h2>
-                <div class="w-16 h-1 bg-amber-500 mx-auto mt-3 rounded-full"></div>
+                <span class="text-blue-600 font-bold uppercase tracking-widest text-xs">Help & FAQs</span>
+                <h2 class="text-3xl font-black text-slate-900 mt-1 fun-font">Frequently Asked Questions</h2>
             </div>
 
             <div class="space-y-4">
-                <details class="bg-white p-5 rounded-2xl border border-slate-200 cursor-pointer group card-shadow">
+                <details class="bg-white p-5 rounded-2xl border border-slate-200 cursor-pointer group shadow-sm">
                     <summary class="font-bold text-slate-900 text-sm sm:text-base flex justify-between items-center">
-                        1. Kya Chandra Classes me Demo Classes available hain?
-                        <i class="fa-solid fa-chevron-down text-amber-600 group-open:rotate-180 transition-transform"></i>
+                        1. Kya Online aur Offline dono batch available hain?
+                        <i class="fa-solid fa-chevron-down text-blue-600 group-open:rotate-180 transition-transform"></i>
                     </summary>
                     <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
-                        Haan, bilkul! Sabhi new students ke liye 2-3 dino ki Free Demo Classes available rehti hain taaki aap teaching style samajh sakein.
+                        Haan! Aap Offline class Kurali (Meerut) center par join kar sakte hain ya ghar baithe Online Live Classes me enroll ho sakte hain.
                     </p>
                 </details>
 
-                <details class="bg-white p-5 rounded-2xl border border-slate-200 cursor-pointer group card-shadow">
+                <details class="bg-white p-5 rounded-2xl border border-slate-200 cursor-pointer group shadow-sm">
                     <summary class="font-bold text-slate-900 text-sm sm:text-base flex justify-between items-center">
-                        2. Classroom coaching ki location kahan hai?
-                        <i class="fa-solid fa-chevron-down text-amber-600 group-open:rotate-180 transition-transform"></i>
+                        2. UP Board aur CBSE Board dono ka syllabus complete karate hain?
+                        <i class="fa-solid fa-chevron-down text-blue-600 group-open:rotate-180 transition-transform"></i>
                     </summary>
                     <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
-                        Humari offline coaching classes **Kurali, Meerut (Uttar Pradesh)** me lagti hain. Direct details ke liye aap **9027126704** par call kar sakte hain.
+                        Ji haan, Sachin Sir UP Board (Hindi/English Medium) aur CBSE Board dono ke NCERT syllabus aur Previous Year Questions (PYQs) ache se cover karate hain.
                     </p>
                 </details>
 
-                <details class="bg-white p-5 rounded-2xl border border-slate-200 cursor-pointer group card-shadow">
+                <details class="bg-white p-5 rounded-2xl border border-slate-200 cursor-pointer group shadow-sm">
                     <summary class="font-bold text-slate-900 text-sm sm:text-base flex justify-between items-center">
-                        3. Kya Class Notes aur PDFs free hain?
-                        <i class="fa-solid fa-chevron-down text-amber-600 group-open:rotate-180 transition-transform"></i>
+                        3. Free Demo Class kaise book karein?
+                        <i class="fa-solid fa-chevron-down text-blue-600 group-open:rotate-180 transition-transform"></i>
                     </summary>
                     <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
-                        Haan, website par diye gaye Class 9th, 10th, 11th aur 12th ke saare Google Drive links completely free hain.
+                        Aap top par diye gaye Demo Form ko fill karke direct WhatsApp par message bhej sakte hain. Demo Classes 3 Days ke liye Free hain.
                     </p>
                 </details>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact & Location Section -->
-    <section id="contact" class="py-16 bg-white border-t border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
-                <div class="space-y-6">
-                    <span class="text-amber-600 font-bold uppercase tracking-widest text-xs">Reach Out To Us</span>
-                    <h2 class="text-3xl sm:text-4xl font-black text-slate-900">Visit CHANDRA CLASSES or Call Today</h2>
-                    <p class="text-slate-600 text-sm leading-relaxed">
-                        Join our offline classroom batches at Kurali, Meerut or contact Mr. Chandra directly for course inquiries.
-                    </p>
-
-                    <div class="space-y-4 pt-2">
-                        <div class="flex items-start space-x-4">
-                            <div class="bg-amber-500/10 text-amber-600 p-3 rounded-2xl border border-amber-500/20 text-lg">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-sm text-slate-900">Institute Address</h4>
-                                <p class="text-xs text-slate-600">CHANDRA CLASSES, Kurali, Meerut, Uttar Pradesh</p>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start space-x-4">
-                            <div class="bg-amber-500/10 text-amber-600 p-3 rounded-2xl border border-amber-500/20 text-lg">
-                                <i class="fa-solid fa-phone"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-sm text-slate-900">Mobile / WhatsApp</h4>
-                                <p class="text-xs text-slate-600"><a href="tel:9027126704" class="hover:underline font-bold text-amber-600">9027126704</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-slate-900 text-white p-8 rounded-3xl text-center shadow-xl">
-                    <i class="fa-solid fa-graduation-cap text-amber-400 text-4xl mb-4"></i>
-                    <h3 class="text-xl font-bold mb-2">Admissions Open 2026-27</h3>
-                    <p class="text-xs text-slate-300 leading-relaxed mb-6">
-                        Fresh batches for Class 9th, 10th, 11th, 12th & Competitive Math starting soon. Call us directly on <strong>9027126704</strong> to reserve your seat.
-                    </p>
-                    <a href="tel:9027126704" class="inline-block bg-amber-500 hover:bg-amber-400 text-slate-950 font-black px-8 py-3.5 rounded-xl transition gold-shadow text-xs uppercase tracking-wider">
-                        <i class="fa-solid fa-phone mr-2"></i> Call Now: 9027126704
-                    </a>
-                </div>
             </div>
         </div>
     </section>
 
     <!-- FLOATING WHATSAPP BUTTON (Bottom Right) -->
-    <a href="https://wa.me/919027126704?text=Hello%20Mr.%20Chandra,%20I%20have%20a%20query%20about%20Chandra%20Classes." target="_blank" class="fixed bottom-6 right-6 bg-emerald-500 hover:bg-emerald-400 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl z-50 transition transform hover:scale-110 shadow-emerald-900/30">
+    <a href="https://wa.me/919027126704?text=Hello%20Sachin%20Sir,%20I%20have%20a%20query%20about%20Class%209-12%20Maths." target="_blank" class="fixed bottom-6 right-6 bg-emerald-500 hover:bg-emerald-400 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl z-50 transition transform hover:scale-110 shadow-emerald-900/30">
         <i class="fa-brands fa-whatsapp text-3xl"></i>
     </a>
 
     <!-- Footer -->
     <footer class="bg-slate-950 text-slate-400 text-xs py-8 border-t border-slate-800 text-center space-y-2">
-        <p>© CHANDRA CLASSES, Kurali, Meerut. All Rights Reserved.</p>
-        <p class="text-slate-500">Mathematics Mentorship for Class 9th, 10th, 11th, 12th, LT Grade & Competitive Exams.</p>
+        <p>© CHANDRA CLASSES by Sachin Sir (B.Sc., B.Ed.). Kurali, Meerut & Online.</p>
+        <p class="text-slate-500">Class 9th, 10th, 11th & 12th Maths Board Specialist (CBSE & UP Board).</p>
     </footer>
 
     <!-- JavaScript Handlers -->
     <script>
-        function updateBatchInfo() {
-            const val = document.getElementById('classSelector').value;
-            const duration = document.getElementById('batchDuration');
-            const tests = document.getElementById('batchTests');
-            const material = document.getElementById('batchMaterial');
-
-            if(val === '9' || val === '10') {
-                duration.innerText = "1 Hour Daily (School Foundation)";
-                tests.innerText = "NCERT + Weekly Chapter Tests";
-                material.innerText = "Free Formula Sheets & Drive PDFs";
-            } else if(val === '11' || val === '12') {
-                duration.innerText = "1.5 Hours Daily (Board Special)";
-                tests.innerText = "Calculus & Board Paper Series";
-                material.innerText = "Comprehensive Practice Question Bank";
-            } else if(val === 'lt') {
-                duration.innerText = "Special Evening Batch";
-                tests.innerText = "Descriptive & Objective Test Series";
-                material.innerText = "Advanced Pure & Applied Math PDFs";
-            }
-        }
-
         function sendWhatsAppQuery(event) {
             event.preventDefault();
             const name = document.getElementById('studentName').value;
+            const studentClass = document.getElementById('studentClass').value;
+            const mode = document.getElementById('studentMode').value;
             const phone = document.getElementById('studentPhone').value;
-            const targetClass = document.getElementById('studentClass').value;
             const msg = document.getElementById('studentMsg').value;
 
-            const text = `Hello Mr. Chandra, New Admission Inquiry:%0A%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Target Class:* ${targetClass}%0A*Message:* ${msg}`;
+            const text = `Hello Sachin Sir, I have an Inquiry for Chandra Classes:%0A%0A*Name:* ${name}%0A*Class:* ${studentClass}%0A*Mode:* ${mode}%0A*Phone:* ${phone}%0A*Message:* ${msg}`;
             window.open(`https://wa.me/919027126704?text=${text}`, '_blank');
         }
     </script>
